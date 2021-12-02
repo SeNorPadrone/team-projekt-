@@ -1,0 +1,137 @@
+.contacts {
+  width: 330px;
+
+  background: var($menu-text-color);
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+}
+.contacts__thumb {
+  padding: 51px 44px 62px 43px;
+}
+.contacts__item {
+}
+.contacts__descr {
+  width: 73px;
+  text-align: center;
+
+  margin-bottom: 32px;
+
+  display: inline-block;
+  font-family: var($main-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.04em;
+
+  color: var($menu-text-color);
+  border-radius: 6px;
+  background-color: #f0d1a5;
+}
+
+.contacts__descr--food {
+  width: 138px;
+  text-align: center;
+
+  background-color: #c2e297;
+}
+
+.contacts__name {
+  display: inline-block;
+  font-family: var($main-font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.88;
+
+  letter-spacing: 0.04em;
+
+  color: var($primary-text-color);
+
+  margin-bottom: 10px;
+}
+.contacts__text {
+  font-family: var($main-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.81;
+
+  letter-spacing: 0.04em;
+
+  color: var($secondary-text-color);
+}
+.contacts__work-time {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  border-top: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
+}
+.contacts__work-time__item {
+  &:nth-child(2n + 1) {
+    margin-bottom: 15px;
+  }
+}
+
+.contacts__work-time__day {
+  font-family: var($main-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.88;
+
+  letter-spacing: 0.04em;
+
+  color: var($primary-text-color);
+}
+
+.contacts__work-time__time {
+  font-family: var($main-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.88;
+
+  color: var($secondary-accent-color);
+}
+
+.contacts__link {
+  display: block;
+
+  font-family: var($main-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.81;
+
+  color: var(--secondary-text-color);
+}
+
+.contacts__link--tel {
+  margin-top: 32px;
+}
+.contacts__link--mail {
+}
+
+.contacts__btn {
+  font-family: var($main-font);
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.31;
+
+  border-radius: 22px;
+  height: 44px;
+
+  border: none;
+}
+
+.contacts__btn--location {
+  width: 198px;
+  margin-right: 15px;
+
+  color: var($menu-text-color);
+  background: var($primary-accent-color);
+}
+.contacts__btn--franchise {
+  width: 180px;
+
+  color: var($primary-accent-color);
+  background: var($menu-text-color);
+}
