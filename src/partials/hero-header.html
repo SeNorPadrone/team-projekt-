@@ -19,23 +19,29 @@
     <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
   </head>
   <body>
-      <header>
-          <div class="main__container">
-          <svg class="header__logo"></svg>
+      <header class="header">
+          <div class="container">
+        <picture>
+            <source srcset="/src/images/logo/logo.webp 1x , //src/images/logo/logo/png 2x">
+          <img alt="логотип" src="//src/images/logo/logo.png">
+        </picture>
+        <div class="mobile-menu">
       <nav class="header__nav">
-          <ul class="header__site-nav">
-          <li class="header__site-nav__item"><a class="header__site-nav__link" href="#">Home</a></li>
-          <li class="header__site-nav__item"><a class="header__site-nav__link" href="#">About us</a></li>
-          <li class="header__site-nav__item"><a class="header__site-nav__link" href="#">How it's made?</a></li>
-          <li class="header__site-nav__item"><a class="header__site-nav__link" href="#">Our products</a></li>
-          <li class="header__site-nav__item"><a class="header__site-nav__link" href="#">Contact</a></li>
+          <ul class="site-nav">
+          <li class="site-nav__item"><a class="site-nav__link" href="#">Home</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="#">About us</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="#">How it's made?</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="#">Our products</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="#">Contact</a></li>
       </ul></nav>
-      <button type="button"></button>
     </div>
-      </header>
-      <main>
+      <button class="header__button-burger" type="button">
+          <svg width="20px" height="12px" class="header__icon-burger"><use href="/src/images/SVG/sprite.svg#icon3"></use></svg>
+      </button>
+    
+    </div>
           <section>
-            <div class="main__container">
+            <div class="container">
               <h1>Ice cream made width <span>passion</span></h1>
               <!-- <img src="../images/mobile/hero-header/slider-pic7-1.png"  alt="Ice cream photo" width="171px"> -->
               <button></button>
@@ -43,6 +49,6 @@
               <img>
             </div>
           </section>
-      </main>
+        </header>
   </body>
 </html>
