@@ -1,6 +1,12 @@
 body {
-  font-family: var(--main-font);
+  font-family: $main-font;
+  background-color: $primary-bg-color;
   font-size: 12px;
+  font-style: normal;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
 }
 
 h1,
