@@ -1,0 +1,26 @@
+/* класс для сброса маркеров на списке */
+ul {
+    list-style: none;
+  }
+  ul,
+  ol {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  /* класс для сброса нижнего подчеркивания с ccылок */
+  a {
+    text-decoration: none;
+  }
+.main-container{
+    padding: 0 20px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: tomato;
+    outline:teal 2px solid;
+
+@media screen and (min-width:320px) {
+    max-width: 320px;
+    display: flex;
+}
+}
+
