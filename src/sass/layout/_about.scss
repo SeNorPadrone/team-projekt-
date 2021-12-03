@@ -64,16 +64,40 @@
 
   color: $secondary-text-color;
 }
-.content__btn {
-}
 
 .content__btn--wrap {
+  position: relative;
+  display: flex;
+  border: solid 1px black;
+  border-radius: 44px;
+  width: 176px;
+  height: 44px;
 }
 
 .content__btn--link {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+}
+
+.content__btn--text {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.28;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  margin-right: 10px;
+  color: $primary-accent-color;
 }
 
 .content__btn--icon {
+  width: 8px;
+  height: 8px;
   fill: $primary-accent-color;
 }
 .statistics {
