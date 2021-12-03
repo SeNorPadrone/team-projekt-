@@ -8,16 +8,16 @@
   color: $primary-accent-color;
   background-color: $menu-text-color;
 
-  &:hover,
-  &:focus {
-    background-color: $hover-button-menu-color;
-  }
+  // &:hover,
+  // &:focus {
+  //   background-color: $hover-button-menu-color;
+  // }
   &--inverse {
     background-color: $primary-accent-color;
     color: $menu-text-color;
     &:hover,
     &:focus {
-      background-color: $hover-button-primary-color;
+      // background-color: $hover-button-primary-color;
     }
   }
 }
