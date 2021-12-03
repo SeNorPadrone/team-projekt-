@@ -1,0 +1,40 @@
+.footer__social-link {
+  display: flex;
+}
+.social-link__item {
+  margin-right: 10px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.social-link__link {
+}
+.social-link__icon {
+}
+.footer__contacts {
+  font-family: $main-font;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.86;
+
+  color: $primary-text-color;
+}
+.footer__contacts-link {
+  color: $primary-accent-color;
+}
+
+.footer__copyright-sign {
+  display: block;
+  padding-top: 29px;
+  font-family: $main-font;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.86;
+
+  letter-spacing: 0.02em;
+
+  color: $secondary-text-color;
+
+  border-top: 1px solid #e1e1e1;
+}

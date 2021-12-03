@@ -1,12 +1,27 @@
 .contacts {
-  width: 330px;
+  display: flex;
+}
 
-  background: var($menu-text-color);
+.visibility-hidden {
+  display: none;
+}
+
+.contacts__thumb {
+  outline: 1px solid teal;
+  width: 330px;
+  margin-right: 29px;
+  padding-top: 51px;
+  padding-left: 44px;
+  padding-right: 44px;
+  padding-bottom: 43px;
+
+  background: $primary-bg-color;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
-}
-.contacts__thumb {
-  padding: 51px 44px 62px 43px;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
 .contacts__item {
 }
@@ -17,13 +32,13 @@
   margin-bottom: 32px;
 
   display: inline-block;
-  font-family: var($main-font);
+  font-family: $main-font;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.04em;
 
-  color: var($menu-text-color);
+  color: $menu-text-color;
   border-radius: 6px;
   background-color: #f0d1a5;
 }
@@ -37,7 +52,7 @@
 
 .contacts__name {
   display: inline-block;
-  font-family: var($main-font);
+  font-family: $main-font;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -45,19 +60,21 @@
 
   letter-spacing: 0.04em;
 
-  color: var($primary-text-color);
+  color: $primary-text-color;
 
   margin-bottom: 10px;
 }
 .contacts__text {
-  font-family: var($main-font);
+  padding-bottom: 32px;
+
+  font-family: $main-font;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.81;
 
   letter-spacing: 0.04em;
 
-  color: var($secondary-text-color);
+  color: $secondary-text-color;
 }
 .contacts__work-time {
   padding-top: 32px;
@@ -73,34 +90,34 @@
 }
 
 .contacts__work-time__day {
-  font-family: var($main-font);
+  font-family: $main-font;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.88;
 
   letter-spacing: 0.04em;
 
-  color: var($primary-text-color);
+  color: $primary-text-color;
 }
 
 .contacts__work-time__time {
-  font-family: var($main-font);
+  font-family: $main-font;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.88;
 
-  color: var($secondary-accent-color);
+  color: $secondary-accent-color;
 }
 
 .contacts__link {
   display: block;
 
-  font-family: var($main-font);
+  font-family: $main-font;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.81;
 
-  color: var(--secondary-text-color);
+  color: $secondary-text-color;
 }
 
 .contacts__link--tel {
@@ -110,7 +127,7 @@
 }
 
 .contacts__btn {
-  font-family: var($main-font);
+  font-family: $main-font;
 
   font-weight: bold;
   font-size: 16px;
@@ -126,12 +143,12 @@
   width: 198px;
   margin-right: 15px;
 
-  color: var($menu-text-color);
-  background: var($primary-accent-color);
+  color: $menu-text-color;
+  background: $primary-accent-color;
 }
 .contacts__btn--franchise {
   width: 180px;
 
-  color: var($primary-accent-color);
-  background: var($menu-text-color);
+  color: $primary-accent-color;
+  background: $menu-text-color;
 }
