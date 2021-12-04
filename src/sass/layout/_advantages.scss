@@ -32,12 +32,12 @@
     }
 }
 
-.advantages__item::before {
+.advantages__item {
     content: "";
     background-size: cover;
     margin-bottom: 16px;
 
-    &:nth-child(1) {
+    &:nth-child(1)::before {
         width: 33px;
         height: 50px;
         background-image: url(/src/images/advantages/advantages1.png);
@@ -48,7 +48,7 @@
             background-image: url(/src/images/advantages/advantages1-@2x.png);
             }
     }
-    &:nth-child(2) {
+    &:nth-child(2)::before {
         width: 50px;
         height: 50px;
         background-image: url(/src/images/advantages/advantages2.png);
@@ -61,7 +61,7 @@
 
     }
 
-    &:nth-child(3) {
+    &:nth-child(3)::before {
         width: 44px;
         height: 50px;
         background-image: url(/src/images/advantages/advantages3.png);
