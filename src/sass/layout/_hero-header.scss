@@ -1,0 +1,161 @@
+.header {
+  background-color: $secondary-accent-color;
+}
+.header__containter {
+  display: flex;
+
+  align-items: center;
+  padding-top: 6px;
+  @media screen and (min-width: 768px) {
+    padding-top: 37px;
+  }
+}
+.containter-picture {
+  min-width: 199px;
+  min-height: 50px;
+}
+.main-nav {
+  margin-left: 110px;
+  margin-right: 110px;
+  @media not screen and (min-width: 1280px) {
+    display: none;
+  }
+}
+.main-nav__list {
+  display: flex;
+  align-items: center;
+}
+.main-nav__item {
+  margin-right: 35px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.main-nav__link {
+  font-family: $main-font;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(21 / 16);
+
+  color: $menu-text-color;
+  &:hover,
+  &:focus {
+    color: $primary-accent-color;
+  }
+}
+.header__btn-buy {
+  background: $primary-bg-color;
+  border-radius: 22px;
+  border-color: transparent;
+  min-width: 160px;
+  height: 44px;
+  margin-left: 30px;
+
+  font-family: $main-font;
+  color: $primary-accent-color;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(21 / 16);
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-left: auto;
+    min-width: 159px;
+  }
+}
+.modal__button-open {
+  background-color: transparent;
+  border-color: transparent;
+  margin-left: auto;
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+}
+.modal__button-open-icon {
+  width: 20px;
+  height: 12px;
+}
+.modal {
+  background-color: #e17992;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 9;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+  @media not screen and (max-width: 1280px) {
+    display: none;
+  }
+}
+
+.modal.is-hidden {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.modal__button-close {
+  position: absolute;
+  background-color: transparent;
+  border-color: transparent;
+  top: 23px;
+  right: 28px;
+}
+.modal__button-close-icon {
+  width: 14px;
+  height: 14px;
+}
+.modal__contaiter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
+.modal__btn-buy {
+  background: $primary-bg-color;
+  border-radius: 22px;
+  border-color: transparent;
+  width: 209px;
+  height: 44px;
+  margin-left: 21px;
+  margin-right: 20px;
+
+  font-family: $main-font;
+  color: $primary-accent-color;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(21 / 16);
+  @media screen and (min-width: 768px) {
+    width: 186px;
+  }
+}
+.modal__btn-buy-arrow {
+  margin-left: 14px;
+  width: 5px;
+  height: 8px;
+}
+.modal__list {
+  margin-top: 29px;
+}
+.modal__item {
+  border-top: 1px solid #e18298;
+  border-bottom: 1px solid #e18298;
+  padding-top: 13px;
+  padding-bottom: 11px;
+}
+.modal__link {
+  margin-left: 21px;
+  font-family: $main-font;
+  color: $menu-text-color;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(18 / 16);
+  &:hover,
+  &:focus {
+    color: $primary-accent-color;
+  }
+}
