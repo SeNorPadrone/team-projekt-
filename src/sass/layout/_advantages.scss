@@ -32,7 +32,6 @@
     }
 }
 
-.advantages__item:nth-child(1)::before,
 .advantages__item:nth-child(2)::before,
 .advantages__item:nth-child(3)::before {
     content: '';
@@ -47,20 +46,30 @@
         }
 }
 
-.advantages__item:nth-child(1)::before {
+.advantages__count:nth-child(1)::before {
+    content: '';
+    background-size: cover;
+    margin-bottom: 16px;
     width: 33px;
     height: 50px;
     background-image: url('/images/advantages/advantages1.png');
     background-size: 33px 50px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 36px;
+        }
+        @media screen and (min-width: 1280px) {
+            margin-bottom: 40px;
+        }
 }
 
 @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
-    .advantages__item:nth-child(1)::before {
+    .advantages__count:nth-child(1)::before {
         background-image: url('/images/advantages/advantages1-@2x.png');
         }  
 }
 
-.advantages__item:nth-child(2)::before {
+.advantages__count:nth-child(2)::before {
     width: 50px;
     height: 50px;
     background-image: url('/images/advantages/advantages2.png');
@@ -70,12 +79,12 @@
 @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-        .advantages__item:nth-child(2)::before {
+        .advantages__count:nth-child(2)::before {
     background-image: url('/images/advantages/advantages2-@2x.png');
     }
 }
 
-.advantages__item:nth-child(3)::before {
+.advantages__count:nth-child(3)::before {
     width: 44px;
     height: 50px;
     background-image: url('/images/advantages/advantages3.png');
@@ -85,7 +94,7 @@
 @media screen and (min-device-pixel-ratio: 2),
 screen and (min-resolution: 192dpi),
 screen and (min-resolution: 2dppx) {
-        .advantages__item:nth-child(3)::before {
+        .advantages__count:nth-child(3)::before {
     background-image: url('/images/advantages/advantages3-@2x.png');
     }   
 }
@@ -96,6 +105,7 @@ screen and (min-resolution: 2dppx) {
     font-size: 36px;
     line-height: 1.14;
     letter-spacing: 0.04em;
+    color: $primary-accent-color;
 
     @media screen and (min-width: 480px) and (max-width: 767px) {
         width: 98px;
