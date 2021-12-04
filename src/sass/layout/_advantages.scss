@@ -2,7 +2,7 @@
     background-color: $secondary-bg-color;
 }
 
-.container__advantages{
+.container__advantages {
     padding-bottom: 97px;
 
     @media screen and (min-width: 768px) {
@@ -32,7 +32,7 @@
     }
 }
 
-.advantages__item::before& {
+.advantages__item::before {
     content: "";
     background-size: cover;
     margin-bottom: 16px;
