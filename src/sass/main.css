@@ -428,7 +428,15 @@ summary {
 }
 
 .breastfeeding ::before {
-  content: url(/src/images/advantages/advantages1.png);
+  content: url(../src/images/advantages/advantages1.png);
+}
+
+.fruits ::before {
+  content: url(../src/images/advantages/advantages2.png);
+}
+
+.ice ::before {
+  content: url(../src/images/advantages/advantages3.png);
 }
 
 .gallery {
