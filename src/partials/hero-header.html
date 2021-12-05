@@ -1,56 +1,58 @@
 <header class="header">
-    <div class="container header__containter">
-      <div class="containter-picture">
-        <picture>
-          <source srcset="/images/logo/logo.webp 1x, /images/logo/logo@2x.png 2x" type="image/webp" />
-          <img src="./images/logo/logo.png" alt="logo" />
-        </picture>
-      </div>
-      <nav class="main-nav">
-        <ul class="main-nav__list">
-          <li class="main-nav__item"><a href="" class="main-nav__link">Home</a></li>
-          <li class="main-nav__item"><a href="" class="main-nav__link">About&nbsp;us</a></li>
-          <li class="main-nav__item">
-            <a href="" class="main-nav__link">How&nbsp;it’s&nbsp;made?</a>
-          </li>
-          <li class="main-nav__item"><a href="" class="main-nav__link">Our&nbsp;products</a></li>
-          <li class="main-nav__item"><a href="" class="main-nav__link">Contact</a></li>
-        </ul>
-      </nav>
-      <button class="modal__button-open" type="submit" data-modal-open>
-        <svg class="modal__button-open-icon">
-          <use href="/images/svg/menu-modal-sprite.svg#icon-burger"></use>
+  <div class="container container--header">
+    <div class="container-picture">
+      <picture>
+        <source srcset="/images/logo/logo.webp 1x, /images/logo/logo@2x.png 2x" type="image/webp" />
+        <img src="./images/logo/logo.png" alt="logo" />
+      </picture>
+    </div>
+    <nav class="main-nav">
+      <ul class="main-nav__list">
+        <li class="main-nav__item"><a href="" class="main-nav__link">Home</a></li>
+        <li class="main-nav__item"><a href="" class="main-nav__link">About&nbsp;us</a></li>
+        <li class="main-nav__item">
+          <a href="" class="main-nav__link">How&nbsp;it’s&nbsp;made?</a>
+        </li>
+        <li class="main-nav__item"><a href="" class="main-nav__link">Our&nbsp;products</a></li>
+        <li class="main-nav__item"><a href="" class="main-nav__link">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="main-nav__container">
+    <button class="modal__button-open" type="submit" data-modal-open>
+      <svg class="modal__button-open-icon">
+        <use href="/images/svg/menu-modal-sprite.svg#icon-burger"></use>
+      </svg>
+    </button>
+    <button type="button" class="header__btn-buy">
+      Buy now
+      <svg class="modal__btn-buy-arrow">        
+        <!-- <use href="/images/svg/menu-modal-sprite.svg#icon-arow-right-button"></use> -->
+      </svg>
+    </button>
+  </div>
+    <div class="modal is-hidden" data-modal>
+      <button type="submit" class="modal__button-close" data-modal-close>
+        <svg class="modal__button-close-icon">
+          <!-- <use href="/images/svg/sprite.svg#close"></use> -->
         </svg>
       </button>
-      <button type="button" class="header__btn-buy">
-        Buy now
-        <svg class="modal__btn-buy-arrow">
-          <use href="/images/svg/menu-modal-sprite.svg#icon-arow-right-button"></use>
-        </svg>
-      </button>
-      <div class="modal is-hidden" data-modal>
-        <button type="submit" class="modal__button-close" data-modal-close>
-          <svg class="modal__button-close-icon">
-            <use href="/images/svg/sprite.svg#close"></use>
+      <div class="modal__contaiter">
+        <button type="button" class="modal__btn-buy">
+          Buy now
+          <svg class="modal__btn-buy-arrow">
+            <!-- <use href="/images/svg/menu-modal-sprite.svg#icon-arow-right-button"></use> -->
           </svg>
         </button>
-        <div class="modal__contaiter">
-          <button type="button" class="modal__btn-buy">
-            Buy now
-            <svg class="modal__btn-buy-arrow">
-              <use href="/images/svg/menu-modal-sprite.svg#icon-arow-right-button"></use>
-            </svg>
-          </button>
-        </div>
-        <ul class="modal__list">
-          <li class="modal__item"><a href="#" class="modal__link">Home</a></li>
-          <li class="modal__item"><a href="#" class="modal__link">About us</a></li>
-          <li class="modal__item"><a href="#" class="modal__link">How it’s made?</a></li>
-          <li class="modal__item"><a href="#" class="modal__link">Our products</a></li>
-          <li class="modal__item"><a href="#" class="modal__link">Contact</a></li>
-        </ul>
       </div>
+      <ul class="modal__list">
+        <li class="modal__item"><a href="#" class="modal__link">Home</a></li>
+        <li class="modal__item"><a href="#" class="modal__link">About us</a></li>
+        <li class="modal__item"><a href="#" class="modal__link">How it’s made?</a></li>
+        <li class="modal__item"><a href="#" class="modal__link">Our products</a></li>
+        <li class="modal__item"><a href="#" class="modal__link">Contact</a></li>
+      </ul>
     </div>
+  </div>
     <section class="hero">
       <div class="container ">
         <div class="hero__thumb">
@@ -64,10 +66,10 @@
     </div>
       <div class="hero__container-img">
         <picture>
-        <source srcset="../images/mobile/hero-header/slider-pic7-1.webp" type="image/webp" media="(max-width: 767px)">
+        <source srcset="../src/images/mobile/hero-header/slider-pic7-1.png">
 
         <img alt="ice-cream"
-        src="../src/images/mobile/hero-header/slider-pic7-1.png" >
+        src="../src/images/mobile/hero-header/slider-pic7-1.png"  >
         </picture> 
     </div>
     <div class="elipse"></div>
