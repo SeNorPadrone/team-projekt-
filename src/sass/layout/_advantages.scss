@@ -1,5 +1,6 @@
 .advantages{
     margin-bottom: 140px;
+    background-color: --secondary-bg-color;
 
     .advantages__title{
         display: none;
@@ -49,14 +50,15 @@
     }
     
 }
-// .breastfeeding ::before{
-//     content: url(../src/images/advantages/advantages1.png);
+.breastfeeding ::before{
+    content: '';
+    background-image: url(../images/advantages/advantages1.png);
     
-// }
-// .fruits ::before{
-//     content: url(../src/images/advantages/advantages2.png);
-// }
-// .ice ::before{
-//     content: url(../src/images/advantages/advantages3.png);
-// }
+}
+.fruits ::before{
+    content: '';
+}
+.ice ::before{
+    content: '';
+}
 
