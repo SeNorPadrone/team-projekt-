@@ -376,8 +376,8 @@ summary {
 }
 
 .advantages {
-  margin-bottom: 140px;
-  background-color: --secondary-bg-color;
+  padding-bottom: 140px;
+  background-color: #fff5f6;
 }
 
 .advantages__title {
