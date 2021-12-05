@@ -32,21 +32,7 @@
     }
 }
 
-.advantages__item:nth-child(2)::before,
-.advantages__item:nth-child(3)::before {
-    content: '';
-    background-size: cover;
-    margin-bottom: 16px;
-
-        @media screen and (min-width: 768px) {
-        margin-bottom: 36px;
-        }
-        @media screen and (min-width: 1280px) {
-            margin-bottom: 40px;
-        }
-}
-
-.advantages__count:nth-child(1)::before {
+.advantages__count--img1::before {
     content: '';
     background-size: cover;
     margin-bottom: 16px;
@@ -64,37 +50,57 @@
 }
 
 @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
-    .advantages__count:nth-child(1)::before {
+    .advantages__count--img1::before {
         background-image: url('/images/advantages/advantages1-@2x.png');
         }  
 }
 
-.advantages__count:nth-child(2)::before {
+.advantages__count--img2::before {
+    content: '';
+    background-size: cover;
+    margin-bottom: 16px;
     width: 50px;
     height: 50px;
     background-image: url('/images/advantages/advantages2.png');
     background-size: 50px 50px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 36px;
+        }
+        @media screen and (min-width: 1280px) {
+            margin-bottom: 40px;
+        }
 }
 
 @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-        .advantages__count:nth-child(2)::before {
+        .advantages__count--img2::before {
     background-image: url('/images/advantages/advantages2-@2x.png');
     }
 }
 
-.advantages__count:nth-child(3)::before {
+.advantages__count--img3::before {
+    content: '';
+    background-size: cover;
+    margin-bottom: 16px;
     width: 44px;
     height: 50px;
     background-image: url('/images/advantages/advantages3.png');
     background-size: 44px 50px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 36px;
+        }
+        @media screen and (min-width: 1280px) {
+            margin-bottom: 40px;
+        }
 }
 
 @media screen and (min-device-pixel-ratio: 2),
 screen and (min-resolution: 192dpi),
 screen and (min-resolution: 2dppx) {
-        .advantages__count:nth-child(3)::before {
+        .advantages__count--img3.advantages__text:last-child {
     background-image: url('/images/advantages/advantages3-@2x.png');
     }   
 }
@@ -123,6 +129,7 @@ screen and (min-resolution: 2dppx) {
         text-align: right;
     }
 }
+
 .advantages__text {
     width: 230px;
     margin-bottom: 38px;
