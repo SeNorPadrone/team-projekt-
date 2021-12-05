@@ -1,6 +1,6 @@
 .header {
   background-color: $hero-header-bg;
-  @media screen and (min-width:768px) {
+  @media screen and (min-width:1280px) {
     padding-top: 37px;
   }
 }
@@ -11,18 +11,17 @@
  
 
   @media screen and (min-width: 320px) and (max-width:767px) {
-  overflow: hidden;
   padding: 0 20px;
-  max-width: 320px;
+  width: 320px;
   }
 
   @media screen and (min-width: 768px) {
-     width: 768px;
+     max-width: 768px;
      padding: 0 34px;
   }
 
-  @media screen and (min-width: 1200px) {
-     width: 1200px;
+  @media screen and (min-width: 1280px) {
+     max-width: 1280px;
      padding: 0 115px;
   }
 }
@@ -31,32 +30,38 @@
   display: flex;
   align-items: center;
   @media screen and (min-width:768px){
-    
+    top: 37px;
     z-index: 2;
     justify-content: space-between;
   }
-  @media screen and (min-width: 1200px){
-    right: 115px;
+  @media screen and (min-width: 1280px){
+    padding-left: 46px;
   }
+}
+.container--hero{
+  position: relative;
 }
 .container-picture {
   min-width: 199px;
   min-height: 50px;
-  @media screen and (min-width:320px) and (max-width:768px) {
+  @media screen and (min-width:320px) and (max-width:768px) and (max-width:1279px){
   margin-right: 61px;
   }
 }
 .main-nav {
   margin-left: 110px;
   margin-right: 110px;
-  @media not screen and (min-width: 1200px) {
+  @media not screen and (min-width: 1280px) {
     display: none;
   }
 }
 .main-nav__container{
-  @media screen and (min-width:320px) and (max-width:1199px) {
+  @media screen and (min-width:768px){
     display: block;
-
+  @media screen and (min-widht:1280px) {
+    display: flex;
+    justify-content: space-between;
+  }
   }
 }
 .main-nav__list {
@@ -97,7 +102,7 @@
   @media screen and (max-width: 768px) {
     display: none;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     margin-left: auto;
     min-width: 159px;
   }
@@ -105,7 +110,7 @@
 .modal__button-open {
   background-color: transparent;
   border-color: transparent;
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     display: none;
   }
 }
@@ -202,19 +207,18 @@
   // MOBILE 
 
   .hero{
-    position: relative;
       margin: 0 auto;
     outline: 2px solid blueviolet;
- @media screen and (min-width:320px) {
-     width: 320px;
+ @media screen and (min-width:320px) and (max-width:767px){
+  overflow: hidden;
+     width: 100%;
      height: 446px; 
-     overflow: hidden;
  }   
  @media screen and (min-width:768px) {
      width: 768px;
      height: 353px;
 }  
-@media screen and (min-width:1200px) {   
+@media screen and (min-width:1280px) {   
     width: 1280px;
     height: 578px;
 }       
@@ -231,7 +235,7 @@
    left: 34px;
    top: 56px;
  }
- @media screen and (min-width:1200px) {
+ @media screen and (min-width:1280px) {
    top: 84px;
    left: 115px;
  }
@@ -265,7 +269,7 @@
       }
     
   }
-  @media screen and (min-width:1200px) {
+  @media screen and (min-width:1280px) {
     height: 137px;
     width: 277px;
     font-size: 38px;
@@ -284,7 +288,7 @@
     @media screen and (min-width:768px) {
       margin-top: 20px;
     }
-    @media screen and (min-width:1200px) {
+    @media screen and (min-width:1280px) {
       margin-top: 25px;
     }
   }
@@ -307,7 +311,7 @@
       font-size: 8px;
       line-height: 1.25;
     }
-  @media screen and (min-width:1200px) {
+  @media screen and (min-width:1280px) {
       width: 102px;
       height: 40px;
       font-size: 14px;
@@ -331,7 +335,7 @@
     font-size: 8px;
     line-height: 1.25;
   }
-  @media screen and (min-width:1200px) {
+  @media screen and (min-width:1280px) {
       width: 138px;
       height: 40px;
       font-size: 14px;
@@ -353,7 +357,7 @@
        width: 143px;
        height: 336px;
    }  
-   @media screen and (min-width:1200px) {
+   @media screen and (min-width:1280px) {
       left: 594px;
       top: 21px;
       width: 236px;
@@ -379,7 +383,7 @@
         height: 322px;
         
     }  
-    @media screen and (min-width:1200px) {
+    @media screen and (min-width:1280px) {
      left: 475px;
      bottom: 75px;
      width: 538px;
@@ -407,7 +411,7 @@
   font-size: 28px;
   line-height: 1.14;
 }
-@media screen and (min-width:1200px) {
+@media screen and (min-width:1280px) {
   top: 73px;
   left: 1111px;
   font-size: 46px;
@@ -428,7 +432,7 @@
     top: 82px;
     font-size: 8px;
     line-height: 1.25;
-  @media screen and (min-width:1200px) {
+  @media screen and (min-width:1280px) {
     left: 1130px;
     top: 128px;
     font-size: 14px;
@@ -450,7 +454,7 @@
   width: 16px;
   height: 16px;
 }
-@media screen and (min-width:1200px) {
+@media screen and (min-width:1280px) {
   left: 1153px;
   top: 69px;
   height: 30px;
@@ -477,7 +481,7 @@ top: 106px;
 font-size: 28px;
 line-height: 1.14;
 }
-@media screen and (min-width:1200px) {
+@media screen and (min-width:1280px) {
   top: 164px;
   left: 1106px; 
   font-size: 46px;
@@ -501,7 +505,7 @@ color: $primary-bg-color;
   font-size: 8px;
   line-height: 1.25;
   }
-@media screen and (min-width:1200px) {
+@media screen and (min-width:1280px) {
   left: 1091px;
   top: 219px;
   font-size: 14px;
@@ -523,7 +527,7 @@ background-color: $primary-bg-color;
   top: 105px;
   left: 718px;
 }
-@media screen and (min-width:1200px) {
+@media screen and (min-width:1280px) {
   top: 161px;
   left: 1153px;
   height: 30px;
@@ -549,7 +553,7 @@ position: absolute;
   line-height: 1.5;
  
 }
-@media screen and (min-width:1200px) {
+@media screen and (min-width:1280px) {
   left: 295px;
   bottom: 102px;
   width: 200px;
