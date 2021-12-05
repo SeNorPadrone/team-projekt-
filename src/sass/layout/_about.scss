@@ -1,26 +1,5 @@
-.title {
-  min-width: 200px;
-  min-height: 112px;
-
-  margin: 0 auto;
-  margin-bottom: 26px;
-
-  color: $secondary-accent-color;
-
-  @media screen and(min-width:768px) {
-    width: 430px;
-    min-height: 100px;
-    margin-bottom: 50px;
-  }
-
-  @media screen and(min-width:1280px) {
-    width: 534px;
-    min-height: 115px;
-  }
-}
-
 .title__second {
-  font-family: Titan One;
+  font-family: $secondary-font;
 
   font-weight: 400;
   font-size: 18px;
@@ -30,6 +9,8 @@
   text-transform: uppercase;
 
   margin-bottom: 15px;
+
+  color: $secondary-accent-color;
 
   @media screen and(min-width:768px) {
     font-size: 26px;
@@ -44,26 +25,36 @@
 }
 
 .title__main {
-  font-family: Titan One;
+  width: 200px;
+
+  font-family: $secondary-font;
   font-weight: 400;
   font-size: 34px;
-  line-height: 39px;
+  line-height: 1.15;
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
 
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 26px;
+
   color: $primary-accent-color;
 
   @media screen and(min-width:768px) {
-    font-size: 48px;
-    line-height: 55px;
+    width: 429px;
+    margin-bottom: 50px;
+
+    font-size: 47px;
+    line-height: calc(55 / 47);
   }
 
   @media screen and(min-width:1280px) {
+    width: 534px;
+    margin-bottom: 55px;
+
     font-size: 58px;
     line-height: calc(66 / 58);
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
   }
 }
 
@@ -76,10 +67,13 @@
   }
   @media screen and(min-width:1280px) {
     margin-bottom: 36px;
+    background-image: url(/images/desktop/about/milk-desktop.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 }
 .content__img {
-  box-sizing: border-box;
   width: 280px;
   height: 280px;
 
@@ -89,13 +83,12 @@
   @media screen and(min-width:768px) {
     width: 340px;
     height: 340px;
-    margin-left: 34px;
     margin-right: 17px;
   }
 
   @media screen and(min-width:1280px) {
-    max-width: 516px;
-    max-height: 516px;
+    width: 516px;
+    height: 516px;
     margin-left: 112px;
     margin-right: 74px;
   }
@@ -108,7 +101,7 @@
   }
 }
 .content__main {
-  font-family: DM Sans;
+  font-family: $main-font;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -139,7 +132,7 @@
 }
 
 .content__second {
-  font-family: DM Sans;
+  font-family: $main-font;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -168,11 +161,18 @@
     width: 463px;
   }
 }
-.content__btn {
-  display: flex;
-  align-items: baseline;
+.content__second--wrap {
+  @media screen and(max-width:767px) {
+    background-image: url(/images/mobile/about/milk-mobile.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
 
-  width: 170px;
+.content__btn {
+  display: block;
+  width: 176px;
   height: 44px;
 
   background: $primary-bg-color;
@@ -184,6 +184,12 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 1.31;
+
+  transition: background-color 250ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
+
+  &:hover {
+    background-color: $hover-button-menu-color;
+  }
 
   @media screen and(max-width:767px) {
     margin: 0 auto;
