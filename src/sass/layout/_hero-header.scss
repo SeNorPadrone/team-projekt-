@@ -29,9 +29,9 @@
   position: relative;
   display: flex;
   align-items: center;
-  @media screen and (min-width:768px){
+  z-index: 2;
+  @media screen and (min-width:768px) and (max-width:1279px){
     top: 37px;
-    z-index: 2;
     justify-content: space-between;
   }
   @media screen and (min-width: 1280px){
@@ -270,8 +270,8 @@
     
   }
   @media screen and (min-width:1280px) {
-    height: 137px;
     width: 277px;
+    height: 137px;
     font-size: 38px;
       line-height: 1.15;
       &-red{
