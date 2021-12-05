@@ -1,77 +1,101 @@
 .advantages{
     margin-bottom: 140px;
     background-color: --secondary-bg-color;
+}
 
-    .advantages__title{
-        display: none;
-    }
-    .advantages__item{
+.advantages__title{
+    display: none;
+}
+.advantages__list{
+
+    @media screen and (min-width: 480px) {
         display: flex;
         justify-content: center;
-         
-        & :not(:last-child){
+        }
+}
+.advantages__number{
+    color: $primary-accent-color;
+    font-family: Titan One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+
+    @media screen and (min-width: 480px) {
+        font-size: 48px;
+        }
+    
+    @media screen and (min-width: 769px) {
+        font-size: 58px;
+    }
+    
+}
+
+.advantages__description{
+    color: --primary-text-color;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 1.7;
+    letter-spacing: 0.02em;
+
+    @media screen and (max-width: 479px) {
+        max-width: 230px;
+        }
+
+    @media screen and (min-width: 480px) {
+        font-size: 14px;
+        }
+    
+    @media screen and (min-width: 769px) {
+        font-size: 16px;
+    }
+    
+}
+
+.advantages__item{
+
+    &::before{
+        height: 50px;
+        margin-bottom: 15px;
+        display: block;
+        content: '';
+
+        @media screen and (min-width: 480px) {
+            margin-bottom: 35px;
+            }
+
+        @media screen and (min-width: 769px) {
+            margin-bottom: 40px;
+            }    
+    }
+    @media screen and (min-width: 480px) {
+        &:not(:last-child){
             margin-right: 30px;
         }
     }
-    .advantages__list{
-        
-       
-    }
-    .advantages__number{
-        color: $primary-accent-color;
-        width: 98px;
-        height: 65px;
-        left: 115px;
-        top: 2750px;
-        font-family: Titan One;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 58px;
-        line-height: 66px;
-        text-align: right;
-        letter-spacing: 0.04em;
-        text-transform: uppercase;
-        margin-bottom: 15px;
-    }
-    
-    .advantages__description{
-        color: --primary-text-color;
-         width: 330px;
-        height: 52px;
-        left: 475px;
-        top: 2830px;
-        font-family: DM Sans;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 16px;
-        line-height: 28px;
-        letter-spacing: 0.02em;
-        
-    }
-    
+
+    @media screen and (max-width: 479px) {
+        margin-bottom: 38px;
+        }
 }
+
+    
 .breastfeeding::before{
-    content: '';
     background-image: url(../images/advantages/advantages1.png);
     width: 33px;
-    height: 50px;
-    margin-bottom: 40px;
-    display: block;
+    
 }
 .fruits::before{
-    content: '';
     background-image: url(../images/advantages/advantages2.png);
     width: 50px;
-    height: 50px;
-    margin-bottom: 40px;
-    display: block;
 }
 .ice::before{
-    content: '';
     background-image: url(../images/advantages/advantages3.png);
     width: 44px;
-    height: 50px;
-    margin-bottom: 40px;
-    display: block;
 }
 
