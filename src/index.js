@@ -1,3 +1,3 @@
 import './sass/main.scss';
-import './menu';
+import '../src/partials/modal';
 import './partials/modal';
