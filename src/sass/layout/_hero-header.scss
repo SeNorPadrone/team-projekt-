@@ -4,27 +4,6 @@
     padding-top: 37px;
   }
 }
-.container {
-  height: 100%;
-  margin-left: auto;
-  margin-right: auto;
- 
-
-  @media screen and (min-width: 320px) and (max-width:767px) {
-  padding: 0 20px;
-  width: 320px;
-  }
-
-  @media screen and (min-width: 768px) {
-     max-width: 768px;
-     padding: 0 34px;
-  }
-
-  @media screen and (min-width: 1280px) {
-     max-width: 1280px;
-     padding: 0 115px;
-  }
-}
 .container--header {
   position: relative;
   display: flex;
@@ -39,6 +18,7 @@
   }
 }
 .container--hero{
+  height: 100%;
   position: relative;
 }
 .container-picture {
@@ -293,16 +273,22 @@
     }
   }
   .hero-list__item + .hero-list__item{
-  margin-left: 8px;
+    @media screen and (min-width: 480px) {
+      margin-left: 8px;
+    }
+    @media screen and (min-width: 768px) {
+      margin-left: 17px;
+    }
+
   }
   .hero-list__button-red{
-    
+    display: flex;
+    justify-content: center;
     align-items: center;
     font-family: $main-font;
     font-style: normal;
     font-weight: 400;
     border-radius: 20px;
-    border: none;
     color: $primary-bg-color;
     background-color: $primary-accent-color;
     @media screen and (min-width:320px) and (max-width:1280px){
@@ -321,6 +307,9 @@
   }
   }
   .hero-list__button-white{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: $main-font;
     font-style: normal;
     font-weight: 400;
