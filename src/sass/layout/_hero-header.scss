@@ -350,8 +350,8 @@
     .hero__container-ice-cream{
         position: absolute;
         z-index: 2;
-      @media screen and (min-width:480px) {
         bottom: 0px;
+      @media screen and (max-width:767px) {
         left: 117px;    
         width: 171px;
         height: 410px;
