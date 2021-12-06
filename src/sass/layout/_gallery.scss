@@ -1,7 +1,64 @@
 .gallery {
-    background-image: linear-gradient( to bottom, #fff5f6 39%, var(--menu-text-color) 41%, var(--menu-text-color) 60%);
+    background-image: linear-gradient( to bottom, $secondary-bg-color 33%, $menu-text-color 45%, $menu-text-color 60%);
+    padding-bottom: 85px;
+    @media screen and (min-width: 1200px) {
+        padding-bottom: 120px;
+    }
 }
 
-.gallery_img {
-    margin: 0 auto;
+.gallery__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
 }
+
+.gallery__item {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-right: 10px;
+    }
+}
+
+.wrap4 {
+    margin-bottom: -43px;
+}
+
+.wrap5 {
+    margin-bottom: 89px;
+}
+
+.wrap6 {
+    margin-bottom: -12px;
+}
+
+.gallery__box {
+    transition: all 1s ease-in-out;
+    border: 1px solid transparent;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.gallery__box:hover,
+.gallery__box:focus {
+    cursor: pointer;
+    transform: perspective(600px) rotateY(-180deg);
+}
+
+.box5 {
+    display: inline-block;
+}
+
+.box2,
+.box4,
+.box6,
+.box8 {
+    margin-bottom: 10px;
+}
+
+// .gallery {
+//     background-image: linear-gradient( to bottom, #fff5f6 39%, var(--menu-text-color) 41%, var(--menu-text-color) 60%);
+// }
+// .gallery_img {
+//     margin: 0 auto;
+// }
