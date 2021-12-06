@@ -1,0 +1,148 @@
+<section class="section">
+  <h2 class="visually-hidden">Castomersreviews</h2>
+  <div class="container reviews_section">
+    <div class="reviews__slideshow">
+      <picture>
+        <source
+          media="(min-width: 270px)"
+          srcset="
+            ../src/images/customerReviews/testimonials1-3.webp    1x,
+            ../src/images/customerReviews/testimonials1-3@2x.webp 2x
+          "
+          type="image/webp"
+        />
+        <source
+          media="(min-width: 270px)"
+          srcset="
+            ../src/images/customerReviews/testimonials1-3.png    1x,
+            ../src/images/customerReviews/testimonials1-3@2x.png 2x
+          "
+        />
+
+        <img class="reviews__photo" src="#" alt="Emily" />
+      </picture>
+      <div class="reviews">
+        <div class="reviews__container">
+          <div class="reviews__container--items">
+            <p class="reviews__container--text">
+              Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In
+              hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="reviews__container--card">
+        <div class="reviews__container--markers"></div>
+        <p class="reviews__container--name">Emily, Los Angeles</p>
+      </div>
+    </div>
+    <div class="reviews__slideshow">
+      <picture>
+        <source
+          media="(min-width: 270px)"
+          srcset="
+            ../src/images/customerReviews/testimonials1-2.webp    1x,
+            ../src/images/customerReviews/testimonials1-2@2x.webp 2x
+          "
+          type="image/webp"
+        />
+        <source
+          media="(min-width: 270px)"
+          srcset="
+            ../src/images/customerReviews/testimonials1-2.png    1x,
+            ../src/images/customerReviews/testimonials1-2@2x.png 2x
+          "
+        />
+
+        <img class="reviews__photo" src="#" alt="Antonia" />
+      </picture>
+      <div class="reviews">
+        <div class="reviews__container">
+          <div class="reviews__container--items">
+            <p class="reviews__container--text">
+              Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In
+              hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="reviews__container--card">
+        <div class="reviews__container--markers"></div>
+        <p class="reviews__container--name">Antonia, Chicago</p>
+      </div>
+    </div>
+    <div class="reviews__slideshow">
+      <picture>
+        <source
+          media="(min-width: 270px)"
+          srcset="
+            ../src/images/customerReviews/testimonials1-1.webp    1x,
+            ../src/images/customerReviews/testimonials1-1@2x.webp 2x
+          "
+          type="image/webp"
+        />
+        <source
+          media="(min-width: 270px)"
+          srcset="
+            ../src/images/customerReviews/testimonials1-1.png    1x,
+            ../src/images/customerReviews/testimonials1-1@2x.png 2x
+          "
+        />
+
+        <img class="reviews__photo" src="#" alt="Emily" />
+      </picture>
+      <div class="reviews">
+        <div class="reviews__container">
+          <div class="reviews__container--items">
+            <p class="reviews__container--text">
+              Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In
+              hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="reviews__container--card">
+        <div class="reviews__container--markers"></div>
+        <p class="reviews__container--name">Jessica, New York</p>
+      </div>
+    </div>
+  </div>
+  <div style="text-align: center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
+  <!-- <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides((slideIndex += n));
+    }
+
+    function currentSlide(n) {
+      showSlides((slideIndex = n));
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName('reviews__slideshow');
+      var dots = document.getElementsByClassName('dot');
+      if (n > slides.length) {
+        slideIndex = 1;
+      }
+      if (n < 1) {
+        slideIndex = slides.length;
+      }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = 'none';
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(' active', '');
+      }
+      slides[slideIndex - 1].style.display = 'block';
+      dots[slideIndex - 1].className += ' active';
+    }
+  </script> -->
+</section>
