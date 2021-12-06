@@ -10,6 +10,8 @@
   align-items: center;
   z-index: 2;
   @media screen and (min-width:768px) and (max-width:1279px){
+    padding: 0;
+    left: 34px;
     top: 37px;
     justify-content: space-between;
   }
@@ -24,24 +26,20 @@
 .container-picture {
   min-width: 199px;
   min-height: 50px;
-  @media screen and (min-width:320px) and (max-width:768px) and (max-width:1279px){
+  @media screen and (min-width:480px) and (max-width:768px) and (max-width:1279px){
   margin-right: 61px;
   }
 }
 .main-nav {
   margin-left: 110px;
   margin-right: 110px;
-  @media not screen and (min-width: 1280px) {
+  @media not screen and (min-width:1280px) {
     display: none;
   }
 }
-.main-nav__container{
-  @media screen and (min-width:768px){
+.main-nav__container {
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
     display: block;
-  @media screen and (min-widht:1280px) {
-    display: flex;
-    justify-content: space-between;
-  }
   }
 }
 .main-nav__list {
@@ -82,15 +80,19 @@
   @media screen and (max-width: 768px) {
     display: none;
   }
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width:1280px) {
     margin-left: auto;
     min-width: 159px;
+  }
+  &:focus,
+  &:hover {
+    background: #ecebeb;
   }
 }
 .modal__button-open {
   background-color: transparent;
   border-color: transparent;
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width:1280px) {
     display: none;
   }
 }
@@ -98,7 +100,7 @@
   width: 20px;
   height: 12px;
 }
-.modal {
+.modal-hero{
   background-color: #e17992;
   position: fixed;
   top: 0;
@@ -114,7 +116,7 @@
   }
 }
 
-.modal.is-hidden {
+.modal-hero.is-hidden {
   display: none;
   opacity: 0;
   visibility: hidden;
@@ -131,7 +133,7 @@
   width: 14px;
   height: 14px;
 }
-.modal__contaiter {
+.modal-hero__contaiter {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -153,6 +155,10 @@
   line-height: calc(21 / 16);
   @media screen and (min-width: 768px) {
     width: 186px;
+  }
+  &:focus,
+  &:hover {
+    background: #ecebeb;
   }
 }
 .modal__btn-buy-arrow {
@@ -187,9 +193,9 @@
   // MOBILE 
 
   .hero{
+    background-color: $hero-header-bg;
       margin: 0 auto;
-    outline: 2px solid blueviolet;
- @media screen and (min-width:320px) and (max-width:767px){
+ @media screen and (min-width:480px) and (max-width:767px){
   overflow: hidden;
      width: 100%;
      height: 446px; 
@@ -207,7 +213,7 @@
   .hero__thumb{
     z-index: 3;
     position: absolute;
- @media screen and (min-width:320px) {
+ @media screen and (min-width:480px) {
     left: 20px;
     top: 137px;      
  }   
@@ -230,7 +236,7 @@
     &-red{
       color: $primary-accent-color; 
     }
-    @media screen and (min-width:320px) {
+    @media screen and (min-width:480px) {
       width: 218px;
       font-size: 26px;
       line-height: 1.15;
@@ -262,7 +268,7 @@
   }
   .hero-list{
     display: flex;
-    @media screen and (min-width:320px) {
+    @media screen and (min-width:480px) {
       margin-top: 19px;
     }
     @media screen and (min-width:768px) {
@@ -276,8 +282,8 @@
     @media screen and (min-width: 480px) {
       margin-left: 8px;
     }
-    @media screen and (min-width: 768px) {
-      margin-left: 17px;
+    @media screen and (min-width: 1280px) {
+      margin-left: 15px;
     }
 
   }
@@ -291,7 +297,12 @@
     border-radius: 20px;
     color: $primary-bg-color;
     background-color: $primary-accent-color;
-    @media screen and (min-width:320px) and (max-width:1280px){
+    &:hover,
+    &:focus{
+    background-color:$hover-button-primary-color;
+    }
+
+    @media screen and (min-width:480px) and (max-width:1280px){
       width: 62.4px;
       height: 24px;
       font-size: 8px;
@@ -318,7 +329,12 @@
     border:none;
     color: $primary-accent-color;
     background-color: $primary-bg-color;
-  @media screen and (min-width:320px) and (max-width:1280px){
+    
+    &:hover,
+    &:focus{
+    background-color: $hover-button-menu-color;
+    }
+  @media screen and (min-width:480px) and (max-width:1280px){
     width: 82.8px;
     height: 24px;
     font-size: 8px;
@@ -331,34 +347,69 @@
       line-height: 1.28;
   }
   }
-  .hero__container-img{
+  .hero__container-ice-cream{
       position: absolute;
       z-index: 2;
-    @media screen and (min-width:320px) {
-        top: 36px;
-        left: 117px;    
-      max-width: 171px;
+    @media screen and (min-width:480px) {
+      bottom: 0px;
+      left: 117px;    
+      width: 171px;
       height: 410px;
     }
    @media screen and (min-width:768px) {
-       top: 17px;
+       
        left: 378px;
        width: 143px;
        height: 336px;
    }  
    @media screen and (min-width:1280px) {
       left: 594px;
-      top: 21px;
       width: 236px;
       height: 557px; 
    }
   }
+  .hero__container-girlfriend {
+     display: none;
+   @media screen and (min-width:768px) {
+     z-index: 2;
+     left: 566px;
+     bottom: 0px;
+     position: absolute;
+     display: block;
+     width: 168px;
+    height: 133px;
+   }
+    @media screen and (min-width: 1280px) {
+      width: 293px;
+      height: 232px;
+      left: 878px;
+    }
+  }
+  .hero__container-milk {
+    display: none;
+    @media screen and (min-width:768px) {
+    display: block;
+    left: 34px;
+    bottom: 28px;
+    z-index: 2;
+    position: absolute;
+    width: 124px;
+    height: 126px;
+    }
+    @media screen and (min-width: 1280px) {
+      width: 188px;
+      height: 191px;
+      left: 77px;
+      bottom: 45px;
+    }
+  }
+
   .elipse{
       z-index: 1 ;
       position: absolute;
       border-radius: 50%;
       background-color: $secondary-accent-color;
-    @media screen and (min-width:320px) {
+    @media screen and (min-width:480px) {
         left: 36px;
         bottom: 75px;
         width: 346px;
@@ -391,7 +442,7 @@
   text-transform: uppercase;
   color: $primary-accent-color;
   
-  @media screen and (min-width:320px) and (max-width: 767px) {
+  @media screen and (min-width:480px) and (max-width: 767px) {
     display: none;
   }
 @media screen and (min-width:768px) {
@@ -413,7 +464,7 @@
   font-style: normal; 
   font-weight: 400;
   color: $primary-bg-color;
-  @media screen and (min-width:320px) and (max-width: 767px) {
+  @media screen and (min-width:480px) and (max-width: 767px) {
     display: none;
   }
   @media screen and (min-width:768px) {
@@ -433,7 +484,7 @@
 .hero-card__elipse{
   border-radius: 50%;
   background-color: $primary-bg-color;
-  @media screen and (min-width:320px) and (max-width: 767px) {
+  @media screen and (min-width:480px) and (max-width: 767px) {
     display: none;
   }
 @media screen and (min-width:768px) {
@@ -461,7 +512,7 @@ letter-spacing: 0.04em;
 text-transform: uppercase;
 color: $primary-accent-color;
 
-@media screen and (min-width:320px) and (max-width: 767px) {
+@media screen and (min-width:480px) and (max-width: 767px) {
   display: none;
 }
 @media screen and (min-width:768px) {
@@ -484,7 +535,7 @@ font-family: $main-font;
 font-style: normal; 
 font-weight: 400;
 color: $primary-bg-color;
-@media screen and (min-width:320px) and (max-width: 767px) {
+@media screen and (min-width:480px) and (max-width: 767px) {
   display: none;
 }
 @media screen and (min-width:768px) {
@@ -506,7 +557,7 @@ color: $primary-bg-color;
 
 border-radius: 50%;
 background-color: $primary-bg-color;
-@media screen and (min-width:320px) and (max-width: 767px) {
+@media screen and (min-width:480px) and (max-width: 767px) {
   display: none;
 }
 @media screen and (min-width:768px) {
@@ -530,7 +581,7 @@ font-style: normal;
 font-weight: 400;
 color: $primary-bg-color;
 position: absolute;
-@media screen and (min-width:320px) and (max-width:767px){
+@media screen and (min-width:480px) and (max-width:767px){
  display: none;
 }
 @media screen and (min-width:768px) {
@@ -552,3 +603,4 @@ position: absolute;
    
 }
 }
+
