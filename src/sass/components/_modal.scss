@@ -1,4 +1,5 @@
 .modal {
+  display: inline-block;
   position: fixed;
   top: 50%;
   left: 0;
@@ -7,6 +8,16 @@
   padding: 40px 20px;
   min-width: 320px;
   width: 100%;
+
+  & .modal__map--320 {
+    display: inline-block;
+  }
+
+  & .modal__map--480,
+  & .modal__map--768,
+  & .modal__map--1280 {
+    display: none;
+  }
 
   @media screen and (min-width: 450px) {
     left: 50%;
@@ -23,14 +34,48 @@
 
   @media screen and (min-width: 480px) {
     padding: 40px;
-    width: 450px;
+    width: 480px;
+
+    & .modal__map--480 {
+      display: inline-block;
+    }
+
+    & .modal__map--320,
+    & .modal__map--768,
+    & .modal__map--1280 {
+      display: none;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 680px;
+
+    & .modal__map--768 {
+      display: inline-block;
+    }
+
+    & .modal__map--320,
+    & .modal__map--480,
+    & .modal__map--1280 {
+      display: none;
+    }
   }
 
   @media screen and (min-width: 1280px) {
-    width: 528px;
+    width: 880px;
+
+    & .modal__map--1280 {
+      display: inline-block;
+    }
+
+    & .modal__map--320,
+    & .modal__map--480,
+    & .modal__map--768 {
+      display: none;
+    }
   }
 
-  background-color: #ffffff;
+  background-color: $primary-bg-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -44,6 +89,7 @@
   position: absolute;
   top: 0;
   right: 0;
+  z-index: 6;
 
   transform: translate(-8px, 8px);
 
@@ -57,10 +103,12 @@
   background-color: transparent;
   cursor: pointer;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover .modal__close-icon, &:focus .modal__close-icon{
+  &:hover .modal__close-icon,
+  &:focus .modal__close-icon {
     fill: $primary-accent-color;
   }
-  &:hover, &:focus{
+  &:hover,
+  &:focus {
     border: 2px solid $secondary-accent-color;
   }
 }
