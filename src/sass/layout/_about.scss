@@ -74,6 +74,7 @@
   }
 }
 .content__img {
+  display: block;
   width: 280px;
   height: 280px;
 
@@ -163,6 +164,8 @@
 }
 .content__second--wrap {
   @media screen and(max-width:767px) {
+    margin-left: -20px;
+    margin-right: -20px;
     background-image: url(/images/mobile/about/milk-mobile.png);
     background-size: contain;
     background-position: center;
