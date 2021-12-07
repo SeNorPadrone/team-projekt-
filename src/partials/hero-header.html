@@ -1,4 +1,210 @@
 <header class="header">
+  <div class="container container--header">
+    <div class="container-picture">
+      <!-- LOGO -->
+      <picture>
+        <source
+          srcset="./images/logo/logo.webp 1x, /images/logo/logo@2x.webp 2x"
+          type="image/webp"
+        />
+        <source srcset="./images/logo/logo.png 1x, /images/logo/logo@2x.png 2x" type="image/png" />
+        <img src="./images/logo/logo.png" alt="logo" />
+      </picture>
+    </div>
+    <!-- основная навигация на desktop -->
+    <nav class="main-nav">
+      <ul class="main-nav__list">
+        <li class="main-nav__item"><a href="" class="main-nav__link">Home</a></li>
+        <li class="main-nav__item"><a href="" class="main-nav__link">About&nbsp;us</a></li>
+        <li class="main-nav__item">
+          <a href="" class="main-nav__link">How&nbsp;it’s&nbsp;made?</a>
+        </li>
+        <li class="main-nav__item"><a href="" class="main-nav__link">Our&nbsp;products</a></li>
+        <li class="main-nav__item"><a href="" class="main-nav__link">Contact</a></li>
+      </ul>
+    </nav>
+    <!-- КНОПКИ ХЕДЕРА -->
+    <div class="main-nav__container">
+      <button class="modal__button-open" type="submit" data-modal-open>
+        <svg class="modal__button-open-icon">
+          <use href="/images/svg/burger.svg#icon-burger"></use>
+        </svg>
+      </button>
+      <button type="button" class="header__btn-buy">
+        Buy now
+        <svg class="modal__btn-buy-arrow">
+          <use href=""></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <!-- ГЕРОЙ -->
+  <section class="hero">
+    <div class="container container--hero">
+      <div class="hero__thumb">
+        <!-- контейнер с главным загловком и кнопками - якорями -->
+        <h1 class="hero__title">
+          Ice cream made with <span class="hero__title-red">passion</span>
+        </h1>
+        <ul class="hero-list">
+          <li class="hero-list__item"><a href="#" class="hero-list__button-red">Products</a></li>
+          <li class="hero-list__item">
+            <a href="#" class="hero-list__button-white">How it's made?</a>
+          </li>
+        </ul>
+      </div>
+      <!-- изображения -->
+      <div class="hero__container-ice-cream">
+        <picture>
+          <source
+            media="(min-width: 1280px)"
+            srcset="
+              images/desktop/hero-header/slider-pic7-1.webp    1x,
+              images/desktop/hero-header/slider-pic7-1@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 1280px)"
+            srcset="
+              images/desktop/hero-header/slider-pic7-1.png    1x,
+              images/desktop/hero-header/slider-pic7-1@2x.png 2x
+            "
+            type="image/png"
+          />
+          <source
+            media="(min-width:768px)"
+            srcset="
+              images/tablet/hero-header/slider-pic7-1.webp    1x,
+              images/tablet/hero-header/slider-pic7-1@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              images/tablet/hero-header/slider-pic7-1.png    1x,
+              images/tablet/hero-header/slider-pic7-1@2x.png 2x
+            "
+            type="image/png"
+          />
+          <source
+            media="(max-width:767px)"
+            srcset="
+              images/mobile/hero-header/slider-pic7-1.webp    1x,
+              images/mobile/hero-header/slider-pic7-1@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(max-width:767px)"
+            srcset="
+              images/mobile/hero-header/slider-pic7-1.png    1x,
+              images/mobile/hero-header/slider-pic7-1@2x.png 2x
+            "
+            type="image/png"
+          />
+          <img alt="ice-cream" src="images/mobile/hero-header/slider-pic7-1.png" />
+        </picture>
+      </div>
+      <div class="hero__container-girlfriend">
+        <picture>
+          <source
+            media="(min-width: 1280px)"
+            srcset="
+
+
+images/desktop/hero-header/slider-pic4-1.webp    1x,
+              images/desktop/hero-header/slider-pic4-1@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 1280px)"
+            srcset="
+              images/desktop/hero-header/slider-pic4-1.png    1x,
+              images/desktop/hero-header/slider-pic4-1@2x.png 2x
+            "
+            type="image/png"
+          />
+          <source
+            media="(min-width:768px)"
+            srcset="
+              images/tablet/hero-header/slider-pic4-1.webp    1x,
+              images/tablet/hero-header/slider-pic4-1@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(min-width:768px)"
+            srcset="
+              images/tablet/hero-header/slider-pic4-1.png    1x,
+              images/tablet/hero-header/slider-pic4-1@2x.png 2x
+            "
+            type="image/png"
+          />
+          <img alt="girlfriend eat ice-cream" src="images/tablet/hero-header/slider-pic4-1.png" />
+        </picture>
+      </div>
+      <div class="hero__container-milk">
+        <picture>
+          <source
+            media="(min-width: 1280px)"
+            srcset="
+              images/desktop/hero-header/slider-pic5-1.webp    1x,
+              images/desktop/hero-header/slider-pic5-1@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 1280px)"
+            srcset="
+              images/desktop/hero-header/slider-pic5-1.png    1x,
+              images/desktop/hero-header/slider-pic5-1@2x.png 2x
+            "
+            type="image/png"
+          />
+          <source
+            media="(min-width:768px)"
+            srcset="
+              images/tablet/hero-header/slider-pic5-1.webp    1x,
+              images/tablet/hero-header/slider-pic5-1@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              images/tablet/hero-header/slider-pic5-1.png    1x,
+              images/tablet/hero-header/slider-pic5-1@2x.png 2x
+            "
+            type="image/png"
+          />
+          <img alt="milk" src="images/tablet/hero-header/slider-pic5-1.png" />
+        </picture>
+      </div>
+      <div class="elipse"></div>
+      <!-- Карточки с цифрами -->
+      <h2 class="hero-card__title">16</h2>
+      <p class="hero-card__text">cafes</p>
+      <div class="hero-card__elipse"></div>
+      <h2 class="hero-card-second__title">23</h2>
+      <h2 class="hero-card-second__text">food&nbsp;trucks</h2>
+      <div class="hero-card-second__elipse"></div>
+      <!-- описание и свг -->
+      <p class="hero__description">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et
+      </p>
+      <div class="hero-button">
+        <svg class="hero-button__icon">
+          <use href="./images/svg/sprite.svg#arrorightw-"></use>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- MODAL!!!! -->
   <div class="modal-hero is-hidden" data-modal>
     <button type="submit" class="modal__button-close" data-modal-close>
       <svg class="modal__button-close-icon">
@@ -21,200 +227,4 @@
       <li class="modal__item"><a href="#" class="modal__link">Contact</a></li>
     </ul>
   </div>
-  <div class="container container--header">
-    <div class="container-picture">
-      <picture>
-        <source
-          srcset="./images/logo/logo.webp 1x, /images/logo/logo@2x.webp 2x"
-          type="image/webp"
-        />
-        <source srcset="./images/logo/logo.png 1x, /images/logo/logo@2x.png 2x" type="image/png" />
-        <img src="./images/logo/logo.png" alt="logo" />
-      </picture>
-    </div>
-    <nav class="main-nav">
-      <ul class="main-nav__list">
-        <li class="main-nav__item"><a href="" class="main-nav__link">Home</a></li>
-        <li class="main-nav__item"><a href="" class="main-nav__link">About&nbsp;us</a></li>
-        <li class="main-nav__item">
-          <a href="" class="main-nav__link">How&nbsp;it’s&nbsp;made?</a>
-        </li>
-        <li class="main-nav__item"><a href="" class="main-nav__link">Our&nbsp;products</a></li>
-        <li class="main-nav__item"><a href="" class="main-nav__link">Contact</a></li>
-      </ul>
-    </nav>
-    <div class="main-nav__container">
-      <button class="modal__button-open" type="submit" data-modal-open>
-        <svg class="modal__button-open-icon">
-          <use href="//src/images/svg/burger.svg"></use>
-        </svg>
-      </button>
-      <button type="button" class="header__btn-buy">
-        Buy now
-        <svg class="modal__btn-buy-arrow">
-          <use href=""></use>
-        </svg>
-      </button>
-    </div>
-  </div>
-  <section class="hero">
-    <div class="container container--hero">
-      <div class="hero__thumb">
-        <h1 class="hero__title">
-          Ice cream made with <span class="hero__title-red">passion</span>
-        </h1>
-        <ul class="hero-list">
-          <li class="hero-list__item"><a href="#" class="hero-list__button-red">Products</a></li>
-          <li class="hero-list__item">
-            <a href="#" class="hero-list__button-white">How it's made?</a>
-          </li>
-        </ul>
-      </div>
-      <div class="hero__container-ice-cream">
-        <picture>
-          <source
-            media="(min-width: 1280px)"
-            srcset="
-              images/desktop/hero-header/slider-pic7-1.webp    1x,
-              images/desktop/hero-header/slider-pic7-1@2x.webp 2x
-            "
-            type="image/webp"
-          />
-          <source
-            media="(min-width: 1280px)"
-            srcset="
-              images/desktop/hero-header/slider-pic7-1.png    1x,
-              images/desktop/hero-header/slider-pic7-1@2x.png 2x
-            "
-            type="image/png"
-          />
-
-          <source
-            media="(min-width:768px)"
-            srcset="
-              images/tablet/hero-header/slider-pic7-1.webp    1x,
-              images/tablet/hero-header/slider-pic7-1@2x.webp 2x
-            "
-            type="image/webp"
-          />
-          <source
-            media="(min-width: 1280px)"
-            srcset="
-              images/tablet/hero-header/slider-pic7-1.png    1x,
-              images/tablet/hero-header/slider-pic7-1@2x.png 2x
-            "
-            type="image/png"
-          />
-
-<source
-            media="(max-width:768px)"
-            srcset="
-              images/mobile/hero-header/slider-pic7-1.webp    1x,
-              images/mobile/hero-header/slider-pic7-1@2x.webp 2x
-            "
-            type="image/webp"
-          />
-          <source
-            media="(max-width:1280px)"
-            srcset="
-              images/mobile/hero-header/slider-pic7-1.png    1x,
-              images/mobile/hero-header/slider-pic7-1@2x.png 2x
-            "
-            type="image/png"
-          />
-
-          <img alt="ice-cream" src="images/mobile/hero-header/slider-pic7-1.png" />
-        </picture>
-      </div>
-      <div class="hero__container-girlfriend">
-        <picture>
-          <source
-            media="(min-width: 1280px)"
-            srcset="
-              images/desktop/hero-header/slider-pic4-1.webp    1x,
-              images/desktop/hero-header/slider-pic4-1@2x.webp 2x
-            "
-            type="image/webp"
-          />
-          <source
-            media="(min-width: 1280px)"
-            srcset="
-              images/desktop/hero-header/slider-pic4-1.png    1x,
-              images/desktop/hero-header/slider-pic4-1@2x.png 2x
-            "
-            type="image/png"
-          />
-
-          <source
-            media="(min-width:768px)"
-            srcset="
-              images/tablet/hero-header/slider-pic4-1.webp    1x,
-              images/tablet/hero-header/slider-pic4-1@2x.webp 2x
-            "
-            type="image/webp"
-          />
-          <source
-            media="(min-width: 1280px)"
-            srcset="
-              images/tablet/hero-header/slider-pic4-1.png    1x,
-              images/tablet/hero-header/slider-pic4-1@2x.png 2x
-            "
-            type="image/png"
-          />
-
-          <img alt="girlfriend eat ice-cream" src="images/tablet/hero-header/slider-pic4-1.png" />
-        </picture>
-      </div>
-      <div class="hero__container-milk">
-        <picture>
-          <source
-            media="(min-width: 1280px)"
-            srcset="
-              images/desktop/hero-header/slider-pic5-1.webp    1x,
-              images/desktop/hero-header/slider-pic5-1@2x.webp 2x
-            "
-            type="image/webp"
-          />
-          <source
-            media="(min-width: 1280px)"
-            srcset="
-              images/desktop/hero-header/slider-pic5-1.png    1x,
-              images/desktop/hero-header/slider-pic5-1@2x.png 2x
-            "
-            type="image/png"
-          />
-
-          <source
-            media="(min-width:768px)"
-            srcset="
-              images/tablet/hero-header/slider-pic5-1.webp    1x,
-              images/tablet/hero-header/slider-pic5-1@2x.webp 2x
-            "
-            type="image/webp"
-          />
-          <source
-            media="(min-width: 1280px)"
-            srcset="
-              images/tablet/hero-header/slider-pic5-1.png    1x,
-              images/tablet/hero-header/slider-pic5-1@2x.png 2x
-            "
-            type="image/png"
-          />
-          <img alt="milk" src="images/tablet/hero-header/slider-pic5-1.png" />
-        </picture>
-      </div>
-      <img />
-      <div class="elipse"></div>
-      <h2 class="hero-card__title">16</h2>
-      <p class="hero-card__text">cafes</p>
-      <div class="hero-card__elipse"></div>
-      <h2 class="hero-card-second__title">23</h2>
-      <h2 class="hero-card-second__text">food trucks</h2>
-      <div class="hero-card-second__elipse"></div>
-      <p class="hero__description">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-        labore et
-      </p>
-    </div>
-  </section>
 </header>
