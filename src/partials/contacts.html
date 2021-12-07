@@ -85,67 +85,183 @@
         </ul>
 
         <div class="contacts__button-container">
-            <button class="contacts__btn contacts__btn--location" type="button" data-modal-open>Our Locations <svg
-                    class="contacts__icon" width="12px" height="12px">
-                    <use href=""></use>
+            <button class="contacts__btn contacts__btn--location" type="button" data-modal-location-open>Our Locations
+                <svg class="contacts__icon" width="12px" height="12px">
+                    <use href="./images/svg/sprite.svg#icon-Vector-1-1"></use>
                 </svg></button>
-            <button class="contacts__btn contacts__btn--franchise" type="button">Franchise <svg
-                    class="contacts__icon contacts__icon--franchise" width="12px" height="12px">
-                    <use href=""></use>
+            <button class="contacts__btn contacts__btn--franchise" type="button" data-modal-open-franchise>Franchise
+                <svg class="contacts__icon contacts__icon--franchise" width="12px" height="12px">
+                    <use href="./images/svg/sprite.svg#icon-Vector-1-1"></use>
                 </svg></button>
         </div>
     </div>
 
-    <div class="backdrop is-hidden" data-modal>
-        <div class="modal">
-            <!-- <form class="form">
-                <span class="form__text">
-                    Оставьте свои данные, мы вам перезвоним
-                </span>
-                <label class="form__label">
-                    Имя
-                    <span class="form-span">
-                        <input class="form__input" type="text" name="user-name">
-                        <svg class="form__icon">
-                            <use href="./images/svg/icomoon/svg/sprite.svg#person-icon"></use>
-                        </svg>
-                    </span>
-                </label>
-                <label class="form__label">
-                    Телефон
-                    <span class="form-span">
-                        <input class="form__input" type="tel" name="user-tel">
-                        <svg class="form__icon">
-                            <use href="./images/svg/icomoon/svg/sprite.svg#phone-form-icon"></use>
-                        </svg>
-                    </span>
-                </label>
-                <label class="form__label">
-                    Почта
-                    <span class="form-span">
-                        <input class="form__input" type="email" name="user-email">
-                        <svg class="form__icon">
-                            <use href="./images/svg/icomoon/svg/sprite.svg#email-form-icon"></use>
-                        </svg>
-                    </span>
-                </label>
-                <label class="form__label">
-                    Комментарий
-                    <textarea class="form__message" name="message" placeholder="Введите текст"></textarea>
-                </label>
-                <label class="form__accept-policy">
-                    <input type="checkbox" class="form__checkbox visibility-hidden">
-                    <span class="form__checkbox-custom"></span>
-                    Соглашаюсь с рассылкой и принимаю&nbsp<a href="" class="form__link-accept">Условия
-                        договора</a></label>
-                <button class="modal__button-submit" type="submit">
-                    Отправить
-                </button>
-                <button type="button" class="modal__button-close" data-modal-close>
-                    <svg class="modal__icon-close">
-                        <use href="./images/svg/icomoon/svg/sprite.svg##icon-close"></use>
-                    </svg>
-                </button>
-            </form> -->
+    <div class="backdrop is-hidden" data-modal-location>
+        <div class="modal modal__location">
+
+            <p class="location__descr">
+                CHICAGO
+            </p>
+
+            <div class="modal__map--320">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d190255.33858260693!2d-87.87204681033981!3d41.83390366656982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2c3cd0f4cbed%3A0xafe0a6ad09c0c000!2z0KfQuNC60LDQs9C-LCDQmNC70LvQuNC90L7QudGBLCDQodCo0JA!5e0!3m2!1sru!2sua!4v1638819742795!5m2!1sru!2sua"
+                    width="300" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+            <div class="modal__map--480">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d190255.33858260693!2d-87.87204681033981!3d41.83390366656982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2c3cd0f4cbed%3A0xafe0a6ad09c0c000!2z0KfQuNC60LDQs9C-LCDQmNC70LvQuNC90L7QudGBLCDQodCo0JA!5e0!3m2!1sru!2sua!4v1638819742795!5m2!1sru!2sua"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+            <div class="modal__map--768">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d190255.33858260693!2d-87.87204681033981!3d41.83390366656982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2c3cd0f4cbed%3A0xafe0a6ad09c0c000!2z0KfQuNC60LDQs9C-LCDQmNC70LvQuNC90L7QudGBLCDQodCo0JA!5e0!3m2!1sru!2sua!4v1638819742795!5m2!1sru!2sua"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+            <div class="modal__map--1280">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d190255.33858260693!2d-87.87204681033981!3d41.83390366656982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2c3cd0f4cbed%3A0xafe0a6ad09c0c000!2z0KfQuNC60LDQs9C-LCDQmNC70LvQuNC90L7QudGBLCDQodCo0JA!5e0!3m2!1sru!2sua!4v1638819742795!5m2!1sru!2sua"
+                    width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+            <p class="location__descr">
+                New York
+            </p>
+
+            <div class="modal__map--320">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.15830869402!2d-74.119763973046!3d40.69766374874431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2z0J3RjNGOLdCZ0L7RgNC6LCDQodCo0JA!5e0!3m2!1sru!2sua!4v1638824471879!5m2!1sru!2sua"
+                    width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+            <div class="modal__map--480">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.15830869402!2d-74.119763973046!3d40.69766374874431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2z0J3RjNGOLdCZ0L7RgNC6LCDQodCo0JA!5e0!3m2!1sru!2sua!4v1638824471879!5m2!1sru!2sua"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+            <div class="modal__map--768">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.15830869402!2d-74.119763973046!3d40.69766374874431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2z0J3RjNGOLdCZ0L7RgNC6LCDQodCo0JA!5e0!3m2!1sru!2sua!4v1638824471879!5m2!1sru!2sua"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+            <div class="modal__map--1280">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.15830869402!2d-74.119763973046!3d40.69766374874431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2z0J3RjNGOLdCZ0L7RgNC6LCDQodCo0JA!5e0!3m2!1sru!2sua!4v1638824471879!5m2!1sru!2sua"
+                    width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+            <p class="location__descr">
+                Los Angeles
+            </p>
+
+
+            <div class="modal__map--320">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d423283.43554989767!2d-118.69191546801642!3d34.02073049790668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2z0JvQvtGBLdCQ0L3QtNC20LXQu9C10YEsINCa0LDQu9C40YTQvtGA0L3QuNGPLCDQodCo0JA!5e0!3m2!1sru!2sua!4v1638824663447!5m2!1sru!2sua"
+                    width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+            <div class="modal__map--480">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d423283.43554989767!2d-118.69191546801642!3d34.02073049790668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2z0JvQvtGBLdCQ0L3QtNC20LXQu9C10YEsINCa0LDQu9C40YTQvtGA0L3QuNGPLCDQodCo0JA!5e0!3m2!1sru!2sua!4v1638824663447!5m2!1sru!2sua"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+            <div class="modal__map--768">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d423283.43554989767!2d-118.69191546801642!3d34.02073049790668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2z0JvQvtGBLdCQ0L3QtNC20LXQu9C10YEsINCa0LDQu9C40YTQvtGA0L3QuNGPLCDQodCo0JA!5e0!3m2!1sru!2sua!4v1638824663447!5m2!1sru!2sua"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+            <div class="modal__map--1280">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d423283.43554989767!2d-118.69191546801642!3d34.02073049790668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2z0JvQvtGBLdCQ0L3QtNC20LXQu9C10YEsINCa0LDQu9C40YTQvtGA0L3QuNGPLCDQodCo0JA!5e0!3m2!1sru!2sua!4v1638824663447!5m2!1sru!2sua"
+                    width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+            <button type="button" class="modal__close-btn" data-modal-location-close>
+                <svg class="modal__close-icon" width="20px" height="20px">
+                    <use href="./images/svg/sprite.svg#icon-close"></use>
+                </svg>
+            </button>
         </div>
+    </div>
+
+    <div class="backdrop is-hidden" data-modal-franchise>
+        <div class="modal modal__franchise">
+
+            <h3 class="franchise__title">НОВАЯ ГАСТРОНОМИЧЕСКАЯ КОНЦЕПЦИЯ ЛЕГЕНДАРНОЙ «PIZZA CELENTANO»!</h3>
+
+            <h4 class="franchise__title--two">Формат «Pizza Celentano Ristorante» – пицца и вино!</h4>
+            <p class="franchise--text"></p>
+
+            <ul class="franchise">
+                <li class="franchise__item">Демократические рестораны с обслуживанием официантами - активной и
+                    дружелюбной молодежью, которая
+                    гарантирует гостю получения максимального удовольствия.</li>
+                <li class="franchise__item">Настоящая итальянская пицца. Приготовленная профессиональными пиццайоло,
+                    которые используют
+                    исключительно итальянские продукты, рецептуру и фристайл. Приготовление пиццы в наших заведениях –
+                    шоу,
+                    которое привлекает
+                    потребителей.</li>
+                <li class="franchise__item">Блюда только из здоровых, полезных, экологически чистых продуктов.</li>
+                <li class="franchise__item">Неповторимый интерьер – эклектичное сочетание стилей, море иронии, ярких
+                    цветов и эмоций! Каждый
+                    ресторан соответствует всем фирменным стандартам, но в то же время отличается индивидуальным
+                    образом.</li>
+                <li class="franchise__item">Магазин антипасты и вина, современная Bambino room.</li>
+            </ul>
+
+            <h4 class="franchise__title--two">МЫ РАЗРУШАЕМ СТЕРЕОТИПЫ!</h4>
+
+            <h5 class="franchise__title--three">Интересные факты за несколько последних лет:</h5>
+
+            <ul class="franchise franchise--facts">
+                <li class="franchise--facts_item">основана в 1998 году первая украинская франчайзинговая сеть родом из
+                    Львова – нам 19 лет!;</li>
+                <li class="franchise--facts_item">
+                    крупнейший франчайзер Украины;</li>
+                <li class="franchise--facts_item">насчитывает около 150 ресторанов;</li>
+                <li class="franchise--facts_item">более 1,7 миллиона зарегистрированных участников программы лояльности
+                    EGOисты;
+                    больше 5000 работников;</li>
+                <li class="franchise--facts_item"> больше 5000 работников;</li>
+                <li class="franchise--facts_item">доля рынка «Pizza Celentano» по данным 2014 года составляла 26%, за
+                    время существования в сети продано
+                    более 100
+                    миллионов пицц (!);</li>
+                <li class="franchise--facts_item">в 2013 году в центре Львова открыт первый ресторан нового формата
+                    "Pizza Celentano Ristorante", где
+                    продается 500
+                    пицц/день.</li>
+            </ul>
+
+            <div class="franchise__contacts">
+                Контактные данные: <a href="tel:+610383766284" class="contacts__link contacts__link--tel"
+                    target="_blank">+61(0) 383
+                    766
+                    284</a>
+                <a href="mailto:noreply@envato.com" class="contacts__link contacts__link--mail"
+                    target="_blank">noreply@envato.com</a>
+            </div>
+            <button type="button" class="modal__close-btn" data-modal-close-franchise>
+                <svg class="modal__close-icon" width="20px" height="20px">
+                    <use href="./images/svg/sprite.svg#icon-close"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+
 </section>

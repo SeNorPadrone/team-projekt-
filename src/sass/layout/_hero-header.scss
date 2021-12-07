@@ -18,9 +18,9 @@
     top: 37px;
   }
   @media screen and (min-width: 1280px) {
-    left: 0px;
+    left: -46px;
     top: 0;
-    padding-left: 46px;
+    padding-left: 0px;
   }
 }
 
@@ -212,12 +212,16 @@
   @media screen and (min-width: 1280px) {
     width: 1280px;
     height: 578px;
+    position: relative;
   }
 }
 
 .container--hero {
   height: 100%;
   position: relative;
+  @media screen and (min-width:1280px) {
+    position: absolute
+  }
 }
 
 .hero__thumb {
@@ -330,6 +334,7 @@
   font-size: 8px;
   line-height: 1.25;
 
+  
   &:hover,
   &:focus {
     background-color: $hover-button-menu-color;
