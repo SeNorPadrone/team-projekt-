@@ -1,30 +1,81 @@
 <section class="about">
   <div class="container">
     <div class="section-about">
-      <div class="title">
-        <p class="title__second">tradition and love</p>
-        <h2 class="title__main">how it’s made?</h2>
-      </div>
-      <ul class="content">
-        <img src="/images/mobile/about/home-pic4-1.png" alt="" class="content__img" />
+      <p class="title__second">tradition and love</p>
+      <h2 class="title__main">how it’s made?</h2>
+      <div class="content">
+        <div class="">
+          <picture class="content__img">
+            <source
+              srcset="
+                ./images/desktop/about/home-pic4-1.webp    1x,
+                ./images/desktop/about/home-pic4-1@2x.webp 2x
+              "
+              media="(min-width: 1280px)"
+              type="image/webp"
+            />
+            <source
+              srcset="
+                ./images/desktop/about/home-pic4-1.png    1x,
+                ./images/desktop/about/home-pic4-1@2x.png 2x
+              "
+              media="(min-width: 1280px)"
+            />
+            <source
+              srcset="
+                ./images/tablet/about/home-pic4-1.webp    1x,
+                ./images/tablet/about/home-pic4-1@2x.webp 2x
+              "
+              media="(min-width: 768px)"
+              type="image/webp"
+            />
+            <source
+              srcset="
+                ./images/tablet/about/home-pic4-1.png    1x,
+                ./images/tablet/about/home-pic4-1@2x.png 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ./images/mobile/about/home-pic4-1.webp    1x,
+                ./images/mobile/about/home-pic4-1@2x.webp 2x
+              "
+              media="(min-width: 320px)"
+              type="image/webp"
+            />
+            <source
+              srcset="
+                ./images/mobile/about/home-pic4-1.png    1x,
+                ./images/mobile/about/home-pic4-1@2x.png 2x
+              "
+              media="(min-width: 320px)"
+            />
+
+            <img src="#" alt="About" />
+          </picture>
+        </div>
         <div class="content__text--wrap">
-          <li class="content__main">
+          <p class="content__main">
             Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus
             lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.
-          </li>
-          <li class="content__second">
-            Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus
-            orci in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat
-            urna maximus. Cras massa nibh, tincidunt. Aliquam erat volutpat. Aenean accumsan.
-          </li>
+          </p>
+          <div class="content__second--wrap">
+            <p class="content__second">
+              Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus
+              orci in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a
+              feugiat urna maximus. Cras massa nibh, tincidunt. Aliquam erat volutpat. Aenean
+              accumsan.
+            </p>
+          </div>
           <button type="button" class="content__btn">
             Read more
             <svg class="content__btn--icon">
-              <use href=""></use>
+              <use href="./images/svg/sprite.svg#icon-Vector-1-1"></use>
             </svg>
           </button>
         </div>
-      </ul>
+      </div>
     </div>
   </div>
 </section>
