@@ -1,7 +1,7 @@
 (() => {
-  const mobileMenu = document.querySelector('[data-modal]');
-  const openMenuBtn = document.querySelector('[data-modal-open]');
-  const closeMenuBtn = document.querySelector('[data-modal-close]');
+  const mobileMenu = document.querySelector('[data-modal-location]');
+  const openMenuBtn = document.querySelector('[data-modal-location-open]');
+  const closeMenuBtn = document.querySelector('[data-modal-location-close]');
 
   const toggleMenu = () => {
     const isMenuOpen = openMenuBtn.getAttribute('aria-expanded') === 'true' || false;

@@ -321,3 +321,61 @@
 .contacts__icon--franchise {
   fill: $primary-accent-color;
 }
+
+.modal__franchise {
+  @media screen and (max-width: 1279px) {
+    height: 100vh;
+  }
+}
+
+.franchise__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.31;
+  text-align: center;
+
+  color: $primary-accent-color;
+}
+
+.franchise__title--two {
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  text-align: center;
+
+  color: $secondary-accent-color;
+}
+
+.franchise__title--three {
+  margin: 0;
+  font-weight: 700;
+  line-height: 1.31;
+  text-align: center;
+
+  color: $secondary-text-color;
+}
+
+.franchise--text {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.31;
+
+  &:first-letter {
+    margin-left: 20px;
+  }
+}
+
+.frinchise__item,
+.franchise--facts_item {
+  margin-bottom: 10px;
+
+  &::first-letter {
+    margin-left: 30px;
+  }
+}
+
+.franchise__contacts {
+  text-align: right;
+}
