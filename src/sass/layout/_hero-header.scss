@@ -1,3 +1,4 @@
+
 .header {
   background-color: $hero-header-bg;
   @media screen and (max-width: 768px) {
@@ -73,6 +74,7 @@
   }
 }
 .header__btn-buy {
+  cursor: pointer;
   background: $primary-bg-color;
   border-radius: 22px;
   border-color: transparent;
@@ -101,6 +103,7 @@
 .modal__button-open {
   background-color: transparent;
   border-color: transparent;
+  cursor: pointer;
   @media screen and (min-width: 1280px) {
     display: none;
   }
@@ -115,23 +118,28 @@
   top: 0;
   left: 0;
   height: 100vh;
-  width: 100vw;
+  width: 250px;
   z-index: 1000;
   opacity: 1;
   visibility: visible;
   pointer-events: all;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width:768px) {
+    width: 254px;
+  }
   @media not screen and (max-width: 1280px) {
     display: none;
   }
 }
 
 .modal-hero.is-hidden {
-  display: none;
+  
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
 }
 .modal__button-close {
+  cursor: pointer;
   position: absolute;
   background-color: transparent;
   border-color: transparent;
@@ -307,8 +315,14 @@
   font-size: 8px;
   line-height: 1.25;
   background-color: $primary-accent-color;
+  transition-property: all;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out;
+  transition-delay: 3ms;
+
   &:hover,
   &:focus {
+    transform: rotate(360deg);
     background-color: $hover-button-primary-color;
   }
   @media screen and (min-width: 1280px) {
@@ -333,10 +347,15 @@
   height: 24px;
   font-size: 8px;
   line-height: 1.25;
+  transition-property:all;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out;
+  transition-delay: 3ms;
 
   
   &:hover,
   &:focus {
+    transform: rotate(360deg);
     background-color: $hover-button-menu-color;
   }
   @media screen and (min-width: 1280px) {
@@ -531,7 +550,7 @@
   font-weight: 400;
   color: $primary-bg-color;
   display: none;
-  @media screen and (max-width: 768px) {
+  @media screen and (min-width: 768px) {
     display: block;
   }
   @media screen and (min-width: 1280px) {
@@ -591,6 +610,7 @@
   left: 154px;
   bottom: 34px;
   position: absolute;
+  cursor: pointer;
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: center;
@@ -624,3 +644,5 @@
     height: 12px;
   }
 }
+
+
