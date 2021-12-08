@@ -66,8 +66,8 @@
   font-weight: 700;
   font-size: 16px;
   line-height: calc(21 / 16);
-
   color: $menu-text-color;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
     color: $primary-accent-color;
@@ -87,6 +87,7 @@
   font-weight: 700;
   font-size: 16px;
   line-height: calc(21 / 16);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   @media not screen and (min-width: 768px) {
     display: none;
   }
@@ -123,7 +124,7 @@
   opacity: 1;
   visibility: visible;
   pointer-events: all;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   @media screen and (min-width:768px) {
     width: 254px;
   }
