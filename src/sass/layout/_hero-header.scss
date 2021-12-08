@@ -1,6 +1,6 @@
 .header {
   background-color: $hero-header-bg;
-  @media screen and (max-width: 768px) {
+  @media not screen and (min-width: 768px) {
     padding-top: 6px;
   }
   @media screen and (min-width: 1280px) {
@@ -65,7 +65,7 @@
   font-weight: 700;
   font-size: 16px;
   line-height: calc(21 / 16);
-
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: $menu-text-color;
   &:hover,
   &:focus {
@@ -79,6 +79,9 @@
   min-width: 160px;
   height: 44px;
   margin-left: 30px;
+  cursor: pointer;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   font-family: $main-font;
   color: $primary-accent-color;
@@ -115,17 +118,24 @@
   top: 0;
   left: 0;
   height: 100vh;
-  width: 100vw;
+  width: 250px;
   z-index: 1000;
   opacity: 1;
   visibility: visible;
   pointer-events: all;
+  transition: visibility 500ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width: 768px) {
+    width: 254px;
+  }
   @media not screen and (max-width: 1280px) {
     display: none;
   }
 }
 
 .modal-hero.is-hidden {
+  transition: visibility 500ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
   display: none;
   opacity: 0;
   visibility: hidden;
@@ -156,6 +166,8 @@
   height: 44px;
   margin-left: 21px;
   margin-right: 20px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   font-family: $main-font;
   color: $primary-accent-color;
@@ -191,6 +203,7 @@
   font-weight: 700;
   font-size: 16px;
   line-height: calc(18 / 16);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
     color: $primary-accent-color;
@@ -219,8 +232,8 @@
 .container--hero {
   height: 100%;
   position: relative;
-  @media screen and (min-width:1280px) {
-    position: absolute
+  @media screen and (min-width: 1280px) {
+    position: absolute;
   }
 }
 
@@ -307,6 +320,8 @@
   font-size: 8px;
   line-height: 1.25;
   background-color: $primary-accent-color;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
     background-color: $hover-button-primary-color;
@@ -333,8 +348,9 @@
   height: 24px;
   font-size: 8px;
   line-height: 1.25;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  
   &:hover,
   &:focus {
     background-color: $hover-button-menu-color;
@@ -440,7 +456,7 @@
   color: $primary-accent-color;
   display: none;
 
-@media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     display: block;
   }
 
@@ -531,10 +547,11 @@
   font-weight: 400;
   color: $primary-bg-color;
   display: none;
-  @media screen and (max-width: 768px) {
+  @media screen and (min-width: 768px) {
     display: block;
   }
   @media screen and (min-width: 1280px) {
+    display: block;
     left: 1091px;
     top: 219px;
     font-size: 14px;
@@ -591,6 +608,14 @@
   left: 154px;
   bottom: 34px;
   position: absolute;
+  cursor: pointer;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $hover-button-menu-color;
+  }
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: center;
