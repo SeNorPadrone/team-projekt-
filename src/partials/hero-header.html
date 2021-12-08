@@ -3,10 +3,7 @@
     <div class="container-picture">
       <!-- LOGO -->
       <picture>
-        <source
-          srcset="./images/logo/logo.webp 1x, /images/logo/logo@2x.webp 2x"
-          type="image/webp"
-        />
+        <source srcset="./images/logo/logo.webp 1x, /images/logo/logo@2x.webp 2x" type="image/webp" />
         <source srcset="./images/logo/logo.png 1x, /images/logo/logo@2x.png 2x" type="image/png" />
         <img src="./images/logo/logo.png" alt="logo" />
       </picture>
@@ -14,13 +11,13 @@
     <!-- основная навигация на desktop -->
     <nav class="main-nav">
       <ul class="main-nav__list">
-        <li class="main-nav__item"><a href="" class="main-nav__link">Home</a></li>
-        <li class="main-nav__item"><a href="" class="main-nav__link">About&nbsp;us</a></li>
+        <li class="main-nav__item"><a href="#" class="main-nav__link">Home</a></li>
+        <li class="main-nav__item"><a href="" class="main-nav__link" id="#about">About&nbsp;us</a></li>
         <li class="main-nav__item">
-          <a href="" class="main-nav__link">How&nbsp;it’s&nbsp;made?</a>
+          <a href="" class="main-nav__link" id="#about">How&nbsp;it’s&nbsp;made?</a>
         </li>
-        <li class="main-nav__item"><a href="" class="main-nav__link">Our&nbsp;products</a></li>
-        <li class="main-nav__item"><a href="" class="main-nav__link">Contact</a></li>
+        <li class="main-nav__item"><a href="" class="main-nav__link" id="#products">Our&nbsp;products</a></li>
+        <li class="main-nav__item"><a href="" class="main-nav__link" id="#contacts">Contact</a></li>
       </ul>
     </nav>
     <!-- КНОПКИ ХЕДЕРА -->
@@ -33,7 +30,7 @@
       <button type="button" class="header__btn-buy">
         Buy now
         <svg class="modal__btn-buy-arrow">
-          <use href=""></use>
+          <use href="./images/svg/sprite.svg#icon-Vector-1-1"></use>
         </svg>
       </button>
     </div>
@@ -47,138 +44,82 @@
           Ice cream made with <span class="hero__title-red">passion</span>
         </h1>
         <ul class="hero-list">
-          <li class="hero-list__item"><a href="#" class="hero-list__button-red">Products</a></li>
+          <li class="hero-list__item"><a href="#products" class="hero-list__button-red">Products</a></li>
           <li class="hero-list__item">
-            <a href="#" class="hero-list__button-white">How it's made?</a>
+            <a href="#about" class="hero-list__button-white">How it's made?</a>
           </li>
         </ul>
       </div>
       <!-- изображения -->
       <div class="hero__container-ice-cream">
         <picture>
-          <source
-            media="(min-width: 1280px)"
-            srcset="
+          <source media="(min-width: 1280px)" srcset="
               images/desktop/hero-header/slider-pic7-1.webp    1x,
               images/desktop/hero-header/slider-pic7-1@2x.webp 2x
-            "
-            type="image/webp"
-          />
-          <source
-            media="(min-width: 1280px)"
-            srcset="
+            " type="image/webp" />
+          <source media="(min-width: 1280px)" srcset="
               images/desktop/hero-header/slider-pic7-1.png    1x,
               images/desktop/hero-header/slider-pic7-1@2x.png 2x
-            "
-            type="image/png"
-          />
-          <source
-            media="(min-width:768px)"
-            srcset="
+            " type="image/png" />
+          <source media="(min-width:768px)" srcset="
               images/tablet/hero-header/slider-pic7-1.webp    1x,
               images/tablet/hero-header/slider-pic7-1@2x.webp 2x
-            "
-            type="image/webp"
-          />
-          <source
-            media="(min-width: 768px)"
-            srcset="
+            " type="image/webp" />
+          <source media="(min-width: 768px)" srcset="
               images/tablet/hero-header/slider-pic7-1.png    1x,
               images/tablet/hero-header/slider-pic7-1@2x.png 2x
-            "
-            type="image/png"
-          />
-          <source
-            media="(max-width:480px)"
-            srcset="
+            " type="image/png" />
+          <source media="(max-width:480px)" srcset="
               images/mobile/hero-header/slider-pic7-1.webp    1x,
               images/mobile/hero-header/slider-pic7-1@2x.webp 2x
-            "
-            type="image/webp"
-          />
-          <source
-            media="(max-width:480px)"
-            srcset="
+            " type="image/webp" />
+          <source media="(max-width:480px)" srcset="
               images/mobile/hero-header/slider-pic7-1.png    1x,
               images/mobile/hero-header/slider-pic7-1@2x.png 2x
-            "
-            type="image/png"
-          />
+            " type="image/png" />
           <img alt="ice-cream" src="images/mobile/hero-header/slider-pic7-1.png" />
         </picture>
       </div>
       <div class="hero__container-girlfriend">
         <picture>
-          <source
-            media="(min-width: 1280px)"
-            srcset="
+          <source media="(min-width: 1280px)" srcset="
 
 images/desktop/hero-header/slider-pic4-1.webp    1x,
               images/desktop/hero-header/slider-pic4-1@2x.webp 2x
-            "
-            type="image/webp"
-          />
-          <source
-            media="(min-width: 1280px)"
-            srcset="
+            " type="image/webp" />
+          <source media="(min-width: 1280px)" srcset="
               images/desktop/hero-header/slider-pic4-1.png    1x,
               images/desktop/hero-header/slider-pic4-1@2x.png 2x
-            "
-            type="image/png"
-          />
-          <source
-            media="(min-width:768px)"
-            srcset="
+            " type="image/png" />
+          <source media="(min-width:768px)" srcset="
               images/tablet/hero-header/slider-pic4-1.webp    1x,
               images/tablet/hero-header/slider-pic4-1@2x.webp 2x
-            "
-            type="image/webp"
-          />
-          <source
-            media="(min-width:768px)"
-            srcset="
+            " type="image/webp" />
+          <source media="(min-width:768px)" srcset="
               images/tablet/hero-header/slider-pic4-1.png    1x,
               images/tablet/hero-header/slider-pic4-1@2x.png 2x
-            "
-            type="image/png"
-          />
+            " type="image/png" />
           <img alt="girlfriend eat ice-cream" src="images/tablet/hero-header/slider-pic4-1.png" />
         </picture>
       </div>
       <div class="hero__container-milk">
         <picture>
-          <source
-            media="(min-width: 1280px)"
-            srcset="
+          <source media="(min-width: 1280px)" srcset="
               images/desktop/hero-header/slider-pic5-1.webp    1x,
               images/desktop/hero-header/slider-pic5-1@2x.webp 2x
-            "
-            type="image/webp"
-          />
-          <source
-            media="(min-width: 1280px)"
-            srcset="
+            " type="image/webp" />
+          <source media="(min-width: 1280px)" srcset="
               images/desktop/hero-header/slider-pic5-1.png    1x,
               images/desktop/hero-header/slider-pic5-1@2x.png 2x
-            "
-            type="image/png"
-          />
-          <source
-            media="(min-width:768px)"
-            srcset="
+            " type="image/png" />
+          <source media="(min-width:768px)" srcset="
               images/tablet/hero-header/slider-pic5-1.webp    1x,
               images/tablet/hero-header/slider-pic5-1@2x.webp 2x
-            "
-            type="image/webp"
-          />
-          <source
-            media="(min-width: 768px)"
-            srcset="
+            " type="image/webp" />
+          <source media="(min-width: 768px)" srcset="
               images/tablet/hero-header/slider-pic5-1.png    1x,
               images/tablet/hero-header/slider-pic5-1@2x.png 2x
-            "
-            type="image/png"
-          />
+            " type="image/png" />
           <img alt="milk" src="images/tablet/hero-header/slider-pic5-1.png" />
         </picture>
       </div>
@@ -213,16 +154,16 @@ images/desktop/hero-header/slider-pic4-1.webp    1x,
       <button type="button" class="modal__btn-buy">
         Buy now
         <svg class="modal__btn-buy-arrow">
-          <use href=""></use>
+          <use href="./images/svg/sprite.svg#icon-Vector-1-1"></use>
         </svg>
       </button>
     </div>
     <ul class="modal__list">
       <li class="modal__item"><a href="#" class="modal__link">Home</a></li>
-      <li class="modal__item"><a href="#" class="modal__link">About us</a></li>
-      <li class="modal__item"><a href="#" class="modal__link">How it’s made?</a></li>
-      <li class="modal__item"><a href="#" class="modal__link">Our products</a></li>
-      <li class="modal__item"><a href="#" class="modal__link">Contact</a></li>
+      <li class="modal__item"><a href="#about" class="modal__link">About us</a></li>
+      <li class="modal__item"><a href="#about" class="modal__link">How it’s made?</a></li>
+      <li class="modal__item"><a href="#products" class="modal__link">Our products</a></li>
+      <li class="modal__item"><a href="#contacts" class="modal__link">Contact</a></li>
     </ul>
   </div>
 </header>
