@@ -1,6 +1,6 @@
-.products__container {
-  padding-top: 121px;
-  padding-bottom: 98px;
+section.products__section {
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .products__label {
@@ -120,6 +120,7 @@
   text-align: center;
   text-transform: uppercase;
   color: $menu-text-color;
+  margin-bottom: 30px;
 
   @media screen and (min-width: 1280px) {
     font-size: 30px;
@@ -419,7 +420,6 @@
   text-align: center;
   letter-spacing: 5px;
   margin-top: 30px;
-  margin-bottom: 30px;
 }
 
 .products__text {
