@@ -1,5 +1,5 @@
 <section class="section reviews_section" id="customerReviews">
-  <h2 class="visually-hidden">Castomersreviews</h2>
+  <h2 class="visually-hidden">Customersreviews</h2>
   <div class="container">
     <div class="reviews__slideshow">
       <picture>
@@ -112,4 +112,36 @@
     <span class="dot" onclick="currentSlide(2)"></span>
     <span class="dot" onclick="currentSlide(3)"></span>
   </div>
+  <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides((slideIndex += n));
+    }
+
+    function currentSlide(n) {
+      showSlides((slideIndex = n));
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName('reviews__slideshow');
+      var dots = document.getElementsByClassName('dot');
+      if (n > slides.length) {
+        slideIndex = 1;
+      }
+      if (n < 1) {
+        slideIndex = slides.length;
+      }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = 'none';
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(' active', '');
+      }
+      slides[slideIndex - 1].style.display = 'block';
+      dots[slideIndex - 1].className += ' active';
+    }
+  </script>
 </section>
