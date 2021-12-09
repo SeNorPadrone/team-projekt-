@@ -1,19 +1,9 @@
-.section--color-2bg {
+.section-advantages {
     background-color: $secondary-bg-color;
-}
-
-.container__advantages {
-    padding-top: 39px;
-    padding-bottom: 97px;
+    padding-bottom: 80px;
 
     @media screen and (min-width: 768px) {
-        padding-top: 66px;
         padding-bottom: 140px;
-    }
-
-    @media screen and (min-width: 1280px) {
-        padding-top: 39px;
-        padding-bottom: 139px;
     }
 }
 
@@ -38,7 +28,6 @@
     }
 }
 .advantages__count {
-    height: 56px;
     font-family: $secondary-font;
     font-weight: 500;
     font-size: 36px;
@@ -51,14 +40,11 @@
     }
 
     @media screen and (min-width: 768px) {
-        margin-bottom: 13px;
         font-size: 48px;
         line-height: 1.15;
     }
 
     @media screen and (min-width: 1280px) {
-        margin-bottom: 15px;
-        height: 65px;
         font-size: 58px;
         line-height: 1.13;
         text-align: right;
@@ -126,18 +112,21 @@ screen and (min-resolution: 2dppx) {
 }
 
 .advantages__text {
+    margin-top: 20px;
     width: 230px;
     font-weight: 700;
     line-height: 1.7;
     color: $primary-text-color;
 
     @media screen and (min-width: 768px) {
+        margin-top: 13px;
         width: 180px;
         line-height: 1.74;
         margin-bottom: 0px;
     }
 
     @media screen and (min-width: 1280px) {
+        margin-top: 15px;
         width: 330px;
         font-size: 16px;
         line-height: 1.76;
