@@ -1,5 +1,15 @@
-.contacts__section {
-  background-color: $secondary-bg-color;
+.contacts-section {
+  //background-color: $secondary-bg-color;
+  background-image: linear-gradient( to bottom, $menu-text-color 5%, $secondary-bg-color 6%, $secondary-bg-color 94%);
+  padding-bottom: 80px;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 158px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    background-image: linear-gradient( to bottom, $menu-text-color 10%, $secondary-bg-color 11%, $secondary-bg-color 89%);
+  }
 }
 
 .contacts-container {

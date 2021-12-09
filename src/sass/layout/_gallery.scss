@@ -1,7 +1,7 @@
-.gallery {
+.section-gallery{
     background-image: linear-gradient( to bottom, $secondary-bg-color 33%, $menu-text-color 45%, $menu-text-color 60%);
-    padding-bottom: 85px;
-    @media screen and (min-width: 1200px) {
+    padding-bottom: 80px;
+    @media screen and (min-width: 768px) {
         padding-bottom: 120px;
     }
 }
